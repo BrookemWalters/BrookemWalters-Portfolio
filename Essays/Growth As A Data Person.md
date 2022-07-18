@@ -1,0 +1,15 @@
+# Growth as a Data Person #
+
+I am thrilled to be a part of this 418/518 stats class. Although it feels a bit like drinking from a firehose at times, I’ve been able to build upon lessons learned from previous courses and tap into my business acumen. I’m also unlearning the bad habits that have years in the making, for instance sloppy version control, and lack of documentation. 
+
+I recognize the power of chasing the small wins, like the moment the piping method clicked. Like water, the data flows through the pipe – *now that’s a clever naming convention!* I understand with persistence and curiosity, I’ll be able to translate my daydreams into code.  Learning to code has been a goal of mine for YEARS, after misguided attempts at online courses, the structure of academia is just what I needed. I finally feel like I’m making progress!  
+
+Before this class, I was comfortable analyzing, aggregating, and visualizing data at a base level. Up until this point, my experience wrangling data had an intense focus around consumer segmentation and behavior for the purpose of perpetuating consumerism.   I heavily used point and click software that required a smidgen of SQL, like [Neustar Element One](https://www.home.neustar/resources/videos/elementone_demo).  The software did all of the heavy lifting regarding statistical computing. 
+
+Throughout this course, I’ve learned to appreciate the benefits of coding under a statistical lens. It’s similar to PC gaming (*coding languages*) verses console gaming (*point and click*). With R studio the granularity of customization appears to be endless, but more importantly it is a more thoughtful approach to data analysis. With this new perspective, devoting time to statistical computing is not a matter of motivation, but time management.  How I wish this were the case in my undergrad years! I’ve turned to free tools like [Trello](https://trello.com/en), and time blocking my google calendar to ensure I’m optimizing my time with the material.  I’m doing everything I can to put forth my best effort and to keep up with my peers with stronger statistical and computer science backgrounds.  For the assigned readings that means actually typing out the code in the text, additionally I’ve installed a speech reader in my browser to help me focus on the assigned readings *(a game changer*).
+
+However, to quote a line that internet hustle culture Kool-Aid accredits to Michael B Jordan, at the end of the day *“it’s me verses me.”*  Where I started compared to where I am now is the parameter I must hold myself accountable to. I have made my “bruise my ego” line from the second preparations assignment my mantra.  It’s kept me accountable to engage in class, ask questions and face the fear of revealing my deficiencies I’d rather conceal. I’m outside of my element, learning the new rules of academia. This is terrifying and exciting!
+
+The marketer turned philosopher Ryan Holiday says, *“Belief in yourself is overrated. Generate evidence.”* So on to that part! 
+
+###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
