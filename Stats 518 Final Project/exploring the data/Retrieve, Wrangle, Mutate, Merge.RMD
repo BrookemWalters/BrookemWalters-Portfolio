@@ -1,0 +1,224 @@
+---
+title: "Creating the dataset"
+author: "brooke"
+date: "7/12/2022"
+output: html_document
+---
+
+# Welcome to my project!
+
+
+Steps taken to retrieve the most recent census and covid morbidity data, mutate variables into percentages, and then join the two datasets:
+
+
+1) Retrieve the most up to date covid death totals for the state of Michigan by county
+2) Calculate county covid deaths per 1000
+3) Pull the most recent ACS demographic estimates (2019 is the most current release as of today)
+4) Calculate, county rate of unemployment, public assistance usage, racial composition, etc
+5) Merge the JH data with the ACS data
+
+
+
+
+
+[Blrub about project]
+
+
+### Step 0 : connect the census via *API* (insert proper usage here)
+to connect to the census data request a key from: https://api.census.gov/data/key_signup.html
+run the census_api_key code below
+census_api_key("INSERT KEY HERE)", install = TRUE)
+*you only have to do this one time*
+
+
+### Step 1: install packages
+#install.packages(c("tidycensus", "tidyverse", "plotly"))
+#library(tidyverse)
+
+
+```{r load tidyverse}
+library(tidyverse)
+
+```
+
+## Part One
+
+### Step 1.2:  pull the most recent data from John Hopkins github repostiory 
+[ insert links and explanation of data]
+
+```{r pull cummlative covid deaths from repository}
+
+jh_covid_repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv"
+  
+us_cd_deaths <- read_csv(jh_covid_repo)
+
+```
+### Step 1.3:  Filter the data by Michigan 
+
+```{r isolate michigan counties from the data set}
+mi_cd_deaths <- filter(us_cd_deaths, Province_State == "Michigan" )
+```
+
+
+
+### Step 1.4: 
+```{r pull relevant variables into wide form}
+# deaths are cumulative, pull the last column for the most current sum
+mi_cd_deaths <- mi_cd_deaths %>% 
+select(Admin2, Province_State, Lat, Long_, Population, FIPS, length(names(mi_cd_deaths)))
+
+#update column names from dates to death, and change combined key to county for joins later
+names(mi_cd_deaths)[7] <- "Total_Deaths"
+names(mi_cd_deaths)[1] <- "County"
+names(mi_cd_deaths)[2] <- "state_name"
+names(mi_cd_deaths)[6] <- "county_fips"
+
+```
+
+
+### Step 1.5: 
+```{r update total deaths to deathrate}
+mi_cd_deaths <- mutate(mi_cd_deaths, Deaths_Per_Pop_Thousand =  (Total_Deaths / (Population / 1000 )))
+mi_cd_deaths <- mutate_at(mi_cd_deaths, 8, round, 2)
+#micdd_tidy is now ready to merge with census data
+
+```
+
+## Part Two
+
+Step 2.1: Load Tidy Census
+```{r}
+library(tidycensus)
+```
+
+
+### Step 2.2: Pull data from ACS: # #https://data.census.gov/cedsci/table?g=0400000US26%240500000_0500000US26007&y=2020&d=ACS%205-Year%20Estimates%20Data%20Profiles&tid=ACSDP5Y2020.DP02
+```{r get-data-from-the-2016-2020-5-year estimates ACS}
+#find the following variables by county and create a csv for reference
+v20<- load_variables(2020, "acs5", cache = TRUE)
+write.csv(v20,"~/STA 518/Stat-518-Portfolio/Final Project/Mi_Covid/data/variable_names")
+
+```
+
+### Step 2.3: Create Function to select relevant estimates 
+```{r estimate function }
+estimates_only_by_GEOID <- function(x){
+  x <- select(x, GEOID, ends_with("E")) 
+}
+
+```
+
+
+"Health is influenced by many factors, which may generally be organized into five broad categories known as determinants of health: genetics, behavior, environmental and physical influences, medical care and social factors. These five categories are interconnected"
+
+Pulling the cenusus data into two chunks so it's easier to follow
+
+Chunk one ecconomic factors
+
+### Step 2.4 Pull Factors 
+population, and estimates: household, median age, median income, unemployed population, labor force population, households on public assistant,  and adults over 25 with a bachelor's degree or higher
+
+```{r health determinate variables}
+ac_eccon_factors <- get_acs(
+  geography = "county",
+  state = "MI",
+  variables = c(population19 = "B01001_001",
+                households = "B09001_002",
+                median_age = "B01002_001",
+                median_income = "B19013_001",
+                unemployed_in_lf = "B23025_005",
+                labor_force_pop = "B23025_002",
+                hh_on_assistance = "B09010_002",
+                bach_degree_plus_a25= "DP02_0068P"),
+  output = "wide"
+) 
+
+```
+### Step 2.5 Create Unemployment Rate, and public assistance rate
+
+
+
+```{r pull social health determinants}
+# use the function created above to select the relevant estimates 
+ac_eccon_factors <- estimates_only_by_GEOID(ac_eccon_factors) %>% 
+  #create the unemployment rate
+  mutate(unemployment_rate = (unemployed_in_lfE / labor_force_popE)*100) %>% 
+  mutate_at(11, round, 1) %>% 
+  select(-labor_force_popE, -unemployed_in_lfE) %>% 
+
+  # create the public assistance rate
+  mutate(public_assist_rate = (hh_on_assistanceE / householdsE)*100) %>% 
+  mutate_at(10, round, 1) %>% 
+  select(-hh_on_assistanceE)
+
+glimpse(ac_eccon_factors)
+
+```
+
+thoughts, I was unaware that nearly 1 third of Michigan is on public assistance!
+quote stats
+
+### Step 2.6 pull county racial composition
+
+```{r Why do you have to bring race into it}
+ac_race_factors <- get_acs(
+  geography = "county",
+  state = "MI",
+  variables = c(population19 = "B01001_001",
+                asian = "B03002_006",
+                black = "B03002_004",
+                native = "B03002_005",
+                pacific_islander = "B03002_007",
+                white = "B03002_003",
+                hispanic = "B03002_012"),
+  output = "wide"
+)
+
+```
+```{r create racial percents}
+#select estimates
+ac_race_factors <- estimates_only_by_GEOID(ac_race_factors) %>% 
+#create percentages  
+  mutate(percent_asian = (asianE/ population19E)*100,
+         percent_black = (blackE/ population19E)*100,
+         percent_native = (nativeE/ population19E)*100,
+         percent_pacific_islander = (pacific_islanderE/ population19E)*100,
+         percent_white = (whiteE/ population19E)*100,
+         percent_hispanic = (hispanicE/ population19E)*100) %>% 
+  #round
+  mutate_at(vars(starts_with("percent")), funs(round(., 1)))
+
+#update variable to only reflect percentages
+ac_race_factors <- ac_race_factors %>% 
+  select(GEOID, (starts_with("percent",ignore.case = TRUE)))
+glimpse(ac_race_factors)
+```
+
+this is where things get exciting!
+time to merge the 2 census sets with the covid data by county!
+
+
+```{r join both census sets}
+ac_eccon_factors <-  left_join(ac_eccon_factors, ac_race_factors, by = "GEOID")
+glimpse(ac_eccon_factors)
+```
+Change the "Name Field" (County, State) to just the county name, so the Census and Covid data can join 
+```{r}
+ac_eccon_factors <- ac_eccon_factors %>% 
+  mutate(County = str_remove_all(NAME, " County, Michigan"))
+glimpse(ac_eccon_factors)
+```
+
+
+The grand finale.... Merge everything together!
+
+```{r join census and covid data}
+covid_census <-  left_join(ac_eccon_factors, mi_cd_deaths, by = "County")
+glimpse(covid_census)
+
+# write csv as a backup
+write.csv(covid_census,"~/STA 518/Stat-518-Portfolio/Final Project/Mi_Covid/data/covid_census.csv")
+```
+
+#Success!!! Data cleaning complete
+
