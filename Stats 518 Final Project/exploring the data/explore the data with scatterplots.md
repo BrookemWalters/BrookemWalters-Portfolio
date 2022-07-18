@@ -1,0 +1,174 @@
+---
+title: "Exploring the Data with Scatter Plots"
+author: "brooke"
+date: "7/16/2022"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+# Exploring the Data With Scatter Plots"
+
+I created four dynamic scatter plot tables that show the county by county relationships between  covid-19 morbity and :
+- public housing assistance rate 
+- median age
+- median income
+- higher education attainment
+- 
+
+the data will be exported into a CVS file and transformed into an aesthetically pleasing dynamic table 
+
+[Here's](link) the final table!
+
+
+The script below:
+
+1) Divides the data into quintiles by covid-19 morbidity rate per 1,000 population
+2) Updates variables names into a descriptive format
+3) Create 4 interactive scatter plots of Michigan counties
+
+
+## Step 0 
+- To use plotly graphs on the GitHub page, you must sign up for plotly and issue an api key.
+import plotly.express as px
+import chart_studio
+set your api
+chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
+
+
+https://stackoverflow.com/questions/72378397/about-plotly-how-can-i-post-it-for-my-github-pages
+
+
+
+## Step 1
+ - Load plotly
+#install package if needed
+
+```{r load ploty}
+library(plotly)
+```
+
+
+## Step 2
+- create quintiles for an added layer the scatter plots
+
+```{r create quintiles}
+covid_quintile <- covid_census %>% 
+  mutate(quintile_group = ntile(Deaths_Per_Pop_Thousand,5))
+
+```
+
+1 = lowest Covid deaths per 1,000
+5 = highest Covid deaths per 1,000
+
+
+## Step 3
+- Convert the quintile numbers into factors, so the variable can have descrete formatting in the plots
+
+
+```{r convert to factors}
+covid_quintile$quintile_group <-  covid_quintile$quintile_group %>%  as.factor 
+```
+
+
+## Step 4
+- Convert data into tibble for ease of wrangling
+
+```{r}
+covid_quintile <- tibble(covid_quintile)
+```
+
+
+## Step 5
+- Update variable names to be descriptive, the other set of descriptive names caused an error if used before this point due to the symbols used
+
+```{r update names}
+names(covid_quintile )[5] <- "Median Age"
+names(covid_quintile )[6] <- "Median Household Income"
+names(covid_quintile )[7] <- "% of Adults 25+ with College Degrees"
+names(covid_quintile )[9] <- "% of Households on Public Assistance"
+names(covid_quintile )[24] <- "Quintile"
+names(covid_quintile )[23] <- "Covid Deaths Per Thousand"
+names(covid_quintile )[22] <- "Total Covid Deaths"
+```
+
+
+
+
+## Steps 6 - 10
+- create a scatter plot showing the  relationship between Covid Deaths per 1000, Total Covid Death, Quintiles, 
+- update the x axis with the desired variable, and update the title to reflect the changes
+
+THE LEGEND NEEDS TO BE FIXED TO REFLECT THE BUBBLE SIZE
+
+```{r housing assistance plots}
+assist_sp <- covid_quintile %>% 
+  ggplot( aes(x = `% of Households on Public Assistance`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+  geom_point(alpha = 6/10) +
+  ggtitle("% of Michigan HHs on Assistance by Covid Deaths Per Thousand" ) +
+ theme(panel.background = element_rect(fill = "white",
+                                colour = "beige",
+                                size = 0.5, linetype = "solid")) +
+         
+  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+
+
+
+
+ggplotly(assist_sp )
+```
+```{r median age plots}
+age_sp <- covid_quintile %>% 
+  ggplot( aes(x = `Median Age`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+  geom_point(alpha = 6/10) +
+  ggtitle("Median Age in Michigan Counties by Covid Deaths Per Thousand" ) +
+ theme(panel.background = element_rect(fill = "white",
+                                colour = "beige",
+                                size = 0.5, linetype = "solid")) +
+         
+  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+
+
+
+
+ggplotly(age_sp )
+```
+
+
+```{r education plots}
+ed_sp <- covid_quintile %>% 
+  ggplot( aes(x = `% of Adults 25+ with College Degrees`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+  geom_point(alpha = 6/10) +
+  ggtitle("Higher Education Attainment in Michigan Counties by Covid Deaths Per Thousand" ) +
+ theme(panel.background = element_rect(fill = "white",
+                                colour = "beige",
+                                size = 0.5, linetype = "solid")) +
+         
+  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+
+
+
+
+ggplotly(ed_sp )
+```
+
+
+```{r income plots}
+income_sp <- covid_quintile %>% 
+  ggplot( aes(x = `Median Household Income`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+  geom_point(alpha = 6/10) +
+  ggtitle("Median Household Income in Michigan Counties by Covid Deaths Per Thousand" ) +
+ theme(panel.background = element_rect(fill = "white",
+                                colour = "beige",
+                                size = 0.5, linetype = "solid")) +
+         
+  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+
+
+
+
+ggplotly(income_sp )
+```

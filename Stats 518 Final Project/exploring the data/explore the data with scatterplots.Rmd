@@ -56,7 +56,7 @@ library(plotly)
 - create quintiles for an added layer the scatter plots
 
 ```{r create quintiles}
-covid_quintile <- covid_census  %>% 
+covid_quintile <- covid_census %>% 
   mutate(quintile_group = ntile(Deaths_Per_Pop_Thousand,5))
 
 ```
