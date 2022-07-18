@@ -5,7 +5,8 @@ date: "7/12/2022"
 output: html_document
 ---
 
-# Welcome to my project!
+# Create Retrieve, Wrangle, Mutate, Merge
+Welcome to my project!
 
 
 Steps taken to retrieve the most recent census and covid morbidity data, mutate variables into percentages, and then join the two datasets:
