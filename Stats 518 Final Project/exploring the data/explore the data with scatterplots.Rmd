@@ -1,1 +1,121 @@
+---
+title: "more exploring the project"
+author: "brooke"
+date: "7/16/2022"
+output: html_document
+---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(plotly)
+```
+
+
+lets make quintiles by death rate!
+```{r}
+
+covid_quintile <- covid_census  %>% 
+  mutate(quintile_group = ntile(Deaths_Per_Pop_Thousand,5))
+
+```
+
+
+group 1 = lowest quintile for death rate
+how much more likely are you to die from covid based on your counties media income?
+
+lets compare the quintiles by race
+
+change these to factors so i change the colors
+```{r}
+covid_quintile$quintile_group <-  covid_quintile$quintile_group %>%  as.factor
+```
+
+
+```{r}
+covid_quintile <- tibble(covid_quintile)
+```
+(df, x='continent', y='pop', color="lifeExp", text='country', 
+             title="Default behavior: some text is tiny")
+
+```{r update names}
+names(covid_quintile )[5] <- "Median Age"
+names(covid_quintile )[6] <- "Median Household Income"
+names(covid_quintile )[7] <- "% of Adults 25+ with College Degrees"
+names(covid_quintile )[9] <- "% of Households on Public Assistance"
+names(covid_quintile )[24] <- "Quintile"
+names(covid_quintile )[23] <- "Covid Deaths Per Thousand"
+names(covid_quintile )[22] <- "Total Covid Deaths"
+```
+
+
+```{r}
+assist_sp <- covid_quintile %>% 
+  ggplot( aes(x = `% of Households on Public Assistance`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+  geom_point(alpha = 6/10) +
+  ggtitle("% of HHs on Assistance by Covid Deaths Per Thousand" ) +
+ theme(panel.background = element_rect(fill = "white",
+                                colour = "beige",
+                                size = 0.5, linetype = "solid")) +
+         
+  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+
+
+
+
+ggplotly(assist_sp )
+```
+```{r}
+age_sp <- covid_quintile %>% 
+  ggplot( aes(x = `Median Age`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+  geom_point(alpha = 6/10) +
+  ggtitle("Median Age by Covid Deaths Per Thousand" ) +
+ theme(panel.background = element_rect(fill = "white",
+                                colour = "beige",
+                                size = 0.5, linetype = "solid")) +
+         
+  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+
+
+
+
+ggplotly(age_sp )
+```
+
+
+```{r}
+ed_sp <- covid_quintile %>% 
+  ggplot( aes(x = `% of Adults 25+ with College Degrees`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+  geom_point(alpha = 6/10) +
+  ggtitle("Higher Education Attainment by Covid Deaths Per Thousand" ) +
+ theme(panel.background = element_rect(fill = "white",
+                                colour = "beige",
+                                size = 0.5, linetype = "solid")) +
+         
+  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+
+
+
+
+ggplotly(ed_sp )
+```
+
+
+```{r}
+income_sp <- covid_quintile %>% 
+  ggplot( aes(x = `Median Household Income`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+  geom_point(alpha = 6/10) +
+  ggtitle("Median Income by Covid Deaths Per Thousand" ) +
+ theme(panel.background = element_rect(fill = "white",
+                                colour = "beige",
+                                size = 0.5, linetype = "solid")) +
+         
+  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+
+
+
+
+ggplotly(income_sp )
+```
