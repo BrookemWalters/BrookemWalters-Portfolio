@@ -10,20 +10,10 @@ navbarPage(
     
   ),
   tabPanel(
-    "All the Data",
+    "All the Michigan County Data",
     fluidPage(
       DTOutput("entire_table_cc")
     ),
-    
-    
-  ),
-  tabPanel(
-    "place holder",
-    fluidPage(
-      DTOutput("starwars")
-    )
-    
-    
-    
+
     
   ))

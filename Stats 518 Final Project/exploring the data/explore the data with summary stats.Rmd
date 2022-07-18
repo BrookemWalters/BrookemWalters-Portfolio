@@ -1,5 +1,5 @@
 ---
-title: "Exploring the Data"
+title: "Exploring the Data With Summary Stats"
 author: "brooke"
 date: "7/12/2022"
 output: html_document
@@ -8,31 +8,38 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+# Exploring the Data With Summary Stats"
 
-Lets see what we can find out from the estimates (used for comparison between places)
+I created  five number summaries for all variables to provide a baseline of the state of Michigan, 
+the data will be exported into a CVS file and transformed into an aesthetically pleasing dynamic table 
 
-I want to create five number summaries for comparison, isolate the variables I want for my table
-
-https://www.statology.org/summary-table-in-r/
+[Here's](link) the final table!
 
 
-Here's how I made an aesthetically pleasing five number summary table of all numeric variables: 
+The script below:
 
-1) Create a descriptive variable names, so I table looks more presentable
-2) Pull a five number summary for all variables (grouped by county)
-3) Round the data one decimal, for aesthetics
-4) trim off unnecessary rows and columns
-5) Write a CSV version of my table for future projects
+1) Creates a descriptive variable names
+2) Pulls a five number summary for all variables (grouped by county) using the ::pysch:: package
+3) Rounds the data one decimal, for aesthetics
+4) Trims off unnecessary rows and columns
+5) Writes a CSV file for export
 
-Here's how I made it shiny! (link)
 
+
+### Step 1: 
+- install packages in console if needed, load the ::tidyverse:: 
+#install.packages(c("pysch", "tidyverse"))
 
 ```{r load tidyverse}
 library(tidyverse)
 ```
 
-I want a version of my data with descriptive variable names rather than tidy ones -> I  am making two variable names so I can use this other table later
-```{r}
+
+### Step 2
+- Rename variables with descriptive titles, allowing for a cleaner looking final table
+- Remove the duplicate population variable from the JHU CSSE COVID-19
+
+```{r rename variables}
 table_covid_census <-  covid_census %>% 
   select( -Population) %>% 
   rename( 
@@ -57,13 +64,10 @@ table_covid_census
 ```
 
 
-
-the describe function will give us a five number summary
-pysch package conflicts with gg plot 
-
-
-it will need to be installed 
-install.packages("psych",dependencies=TRUE)
+### Step 3
+- Calculate a five number summary of all variable using the "describe" function from the ::pysch:: package
+  - **note* the ::pysch:: has a major conflict the ::ggplot2:: -to avoid bugs later, it's best to run it as part of the function
+  - because the data includes non-numerical values, a warning message is generated but all is well
 
 ```{r five number sum it all}
 sum_table_covid_census <- psych::describe(table_covid_census, fast = TRUE ) %>% 
@@ -71,8 +75,11 @@ sum_table_covid_census <- psych::describe(table_covid_census, fast = TRUE ) %>%
 
 sum_table_covid_census
 ```
-#Change the first coluimn to the variable names, and remove the unneeded counts 83 for the counties of
 
+
+### Step 4
+- Change the first column to the variable names, for table readability 
+- All of the variables are for all 83 counties, removing "n" column that as well
 
 ```{r prepare data to be vizualized in a table}
 sum_table_covid_census <- tibble::rownames_to_column(sum_table_covid_census, "VALUE") %>%
@@ -80,41 +87,41 @@ sum_table_covid_census <- tibble::rownames_to_column(sum_table_covid_census, "VA
  
 ```
 
-update the data to a tibble so it's easier to move variables around
-```{r}
- as_tibble(table_covid_census)
-```
 
+### Step 5
+- remove non-numerical variables from the rows, and error message generates for non-numerical values but all is well!
 
-remove non-numerical values (you will get an error for the non-numerical values)
 ```{r remove the nonsense rows}
 sum_table_covid_census <- sum_table_covid_census[-c(1, 2, 16, 17,18,19,20),]
 sum_table_covid_census
 
 ```
 
-put this in csv file
-```{r}
-write.csv(sum_table_covid_census,"~/STA 518/Stat-518-Portfolio/Final Project/Mi_Covid/data/covid_census_summary_stats.csv")
+
+### Step 6
+- Write an CSV file for use import into the dynamic summary table
+
+```{r write csv sum stat file}
+write.csv(sum_table_covid_census,"~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/data/covid_census_summary_stats.csv")
 ```
  
- the file can be used for a shiny tables page
- 
- 
-I will clean up the table file now
+
+
+### Step 7 
+ - Clean up the full data set from Step 2 for use in the dynamic table
 
 
 ```{r table_covid_census}
-
 table_covid_census <-  table_covid_census %>% 
   select(County, Population, Households,`Total Covid Deaths`, `Covid Deaths Per Thousand`,  `Median Age`, `Median HHI`, `% A25+ College Grad+`,
          `Unemployment Rate`, `% of HH on Public Assist.`, `% Asain`, `% Black`, `% Native American`, `% Pacific Islander`, `% White`, `% Hispanic`)
 ```
 
  
- 
-```{r}
-write.csv(table_covid_census,"~/STA 518/Stat-518-Portfolio/Final Project/Mi_Covid/data/Covid_Census_Table.csv")
+### Step  8 
+- Write a CSV file for use import into the dynamic county table 
+```{r write the csv full table file}
+write.csv(table_covid_census,"~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/data/Covid_Census_Table.csv")
 ```
 
 
