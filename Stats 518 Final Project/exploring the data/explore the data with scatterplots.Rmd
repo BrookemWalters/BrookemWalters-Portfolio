@@ -29,17 +29,7 @@ The script below:
 1) Divides the data into quintiles by covid-19 morbidity rate per 1,000 population
 2) Updates variables names into a descriptive format
 3) Create 4 interactive scatter plots of Michigan counties
-
-
-## Step 0 
-- To use plotly graphs on the GitHub page, you must sign up for plotly and issue an api key.
-import plotly.express as px
-import chart_studio
-set your api
-chart_studio.tools.set_credentials_file(username=username, api_key=api_key)
-
-
-https://stackoverflow.com/questions/72378397/about-plotly-how-can-i-post-it-for-my-github-pages
+4) Export plots for as jpegs in the portfolio repository 
 
 
 
@@ -83,7 +73,7 @@ covid_quintile <- tibble(covid_quintile)
 
 
 ## Step 5
-- Update variable names to be descriptive, the other set of descriptive names caused an error if used before this point due to the symbols used
+- Update variable with descriptive names, the other set of descriptive names caused an error if used before this point due to the symbols used
 
 ```{r update names}
 names(covid_quintile )[5] <- "Median Age"
@@ -95,10 +85,15 @@ names(covid_quintile )[23] <- "Covid Deaths Per Thousand"
 names(covid_quintile )[22] <- "Total Covid Deaths"
 ```
 
+## Step 6
+ - Create a color pallet for quintiles
+```{r create customer color pa;;et}
+morbid_palette <-  c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")
+```
+ 
 
 
-
-## Steps 6 - 10
+-## Steps 7-11 
 - create a scatter plot showing the  relationship between Covid Deaths per 1000, Total Covid Death, Quintiles, 
 - update the x axis with the desired variable, and update the title to reflect the changes
 
@@ -108,33 +103,41 @@ THE LEGEND NEEDS TO BE FIXED TO REFLECT THE BUBBLE SIZE
 assist_sp <- covid_quintile %>% 
   ggplot( aes(x = `% of Households on Public Assistance`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
   geom_point(alpha = 6/10) +
-  ggtitle("% of Michigan HHs on Assistance by Covid Deaths Per Thousand" ) +
- theme(panel.background = element_rect(fill = "white",
-                                colour = "beige",
-                                size = 0.5, linetype = "solid")) +
-         
-  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+  scale_size_continuous(range = c(2, 15)) +
+  labs(title = "% of Michigan HHs on Assistance by Covid Deaths Per Thousand")+
+  scale_color_manual(values = death_palette) 
+
+#save the static plot to the "plots" folder
+jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/assist_sp.jpeg",
+      width = 1000, height = 650)
+assist_sp 
 
 
-
-
-ggplotly(assist_sp )
+# display the interactive version
+ia_assist_sp <-  ggplotly(assist_sp )
+ia_assist_sp
 ```
+
+
 ```{r median age plots}
+
+# static version
 age_sp <- covid_quintile %>% 
   ggplot( aes(x = `Median Age`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
   geom_point(alpha = 6/10) +
-  ggtitle("Median Age in Michigan Counties by Covid Deaths Per Thousand" ) +
- theme(panel.background = element_rect(fill = "white",
-                                colour = "beige",
-                                size = 0.5, linetype = "solid")) +
-         
-  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+  scale_size_continuous(range = c(2, 15)) +
+  labs(title = "Median Age in Michigan Counties by Covid Deaths Per Thousand" ) +
+  scale_color_manual(values = morbid_palette) 
+
+#save the static plot to the "plots" folder
+jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/age_sp.jpeg",
+     width = 1000, height = 650)
+age_sp 
 
 
-
-
-ggplotly(age_sp )
+# display the interactive version
+ia_age_sp <-ggplotly(age_sp)
+ia_age_sp
 ```
 
 
@@ -142,17 +145,18 @@ ggplotly(age_sp )
 ed_sp <- covid_quintile %>% 
   ggplot( aes(x = `% of Adults 25+ with College Degrees`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
   geom_point(alpha = 6/10) +
-  ggtitle("Higher Education Attainment in Michigan Counties by Covid Deaths Per Thousand" ) +
- theme(panel.background = element_rect(fill = "white",
-                                colour = "beige",
-                                size = 0.5, linetype = "solid")) +
-         
-  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+  scale_size_continuous(range = c(2, 15)) +
+  labs(title = "Higher Education Attainment in Michigan Counties by Covid Deaths Per Thousand" ) +
+  scale_color_manual(values = morbid_palette) 
 
+#save the static plot to the "plots" folder
+jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/ed_sp.jpeg",
+      width = 1000, height = 650)
+ed_sp
 
-
-
-ggplotly(ed_sp )
+# display the interactive version
+ia_ed_sp <- ggplotly(ed_sp )
+ia_ed_sp
 ```
 
 
@@ -160,15 +164,29 @@ ggplotly(ed_sp )
 income_sp <- covid_quintile %>% 
   ggplot( aes(x = `Median Household Income`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
   geom_point(alpha = 6/10) +
-  ggtitle("Median Household Income in Michigan Counties by Covid Deaths Per Thousand" ) +
- theme(panel.background = element_rect(fill = "white",
-                                colour = "beige",
-                                size = 0.5, linetype = "solid")) +
-         
-  scale_color_manual(values = c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")) 
+  scale_size_continuous(range = c(2, 15)) +
+ labs(title ="Median Household Income in Michigan Counties by Covid Deaths Per Thousand" ) +
+  scale_color_manual(values = morbid_palette) 
 
+#save the static plot to the "plots" folder
+jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/income_sp.jpeg",
+      width = 1000, height = 650)
+income_sp
 
-
-
-ggplotly(income_sp )
+# display the interactive version
+ia_ed_sp <- ggplotly(ed_sp )
+ia_ed_sp
 ```
+
+ia_income_sp <- ggplotly(income_sp )
+ia_income_sp 
+```
+
+## Step 12
+- set working directory
+- export static graphs
+
+
+
+
+
