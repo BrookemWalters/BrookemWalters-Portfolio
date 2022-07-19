@@ -4,7 +4,7 @@ At the age of 16, my grandmother “Nana” left her parents and 10 siblings beh
 
 Upon moving north, Nana had the good fortune of meeting Betty, who was secretly dating a well to do judge. Betty’s boyfriend bought her a house in a white middleclass neighborhood… This was a HUGE scandal. You see, blacks were not “allowed” to own property in that part of town. Betty’s boyfriend found a loophole. According to my grandmother, the neighbors were completely beside themselves, and promptly vacated the neighborhood. 
 
-![Head of State Gif](https://gfycat.com/discover/head-of-state-gifs)
+![Head of State Gif](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Dramatic%20Images/ConsciousPowerfulColt-max-1mb.gif?raw=true)
 
 
 My grandmother bought the home next to Betty for a fraction of the cost by the distraught homeowners. By the time my father was born, the neighborhood shifted into a black middleclass west Michigan neighborhood. Nana still lives in this home today. 
