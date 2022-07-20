@@ -8,7 +8,7 @@
 ***
 ***
 ## 2. Michigan Counties and Covid 19 (Stat 518 Final Project)
-### 2.1 [Introduction]
+### 2.1 [Introduction](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Introduction.md#introduction-to-michigan-counties-in-a-pandemic)
 ### 2.2 [Interactive Data Vizualizations]
 #### 2.2.1 [Summary of Data]
 #### 2.2.2 [Scatterplots]

@@ -1,6 +1,6 @@
 # Introduction to Michigan Counties in a Pandemic
 
-At the age of 16, my grandmother “Nana” left her parents and 10 siblings behind in pursuit of a better life in Grand Rapids, Michigan. Her parents were sharecroppers, and if you know anything about 1950’s Alabama – life wasn’t exactly ideal for a young black woman. 
+At the age of 16, my grandmother “Nana” left her parents and ten siblings behind in pursuit of a better life in Grand Rapids, Michigan. Her parents were sharecroppers, and if you know anything about 1950’s Alabama – life wasn’t exactly ideal for a young black woman. 
 
 Upon moving north, Nana had the good fortune of meeting Betty, who was secretly dating a well to do judge. Betty’s boyfriend bought her a house in a white middleclass neighborhood… This was a HUGE scandal. You see, blacks were not “allowed” to own property in that part of town. Betty’s boyfriend found a loophole. According to my grandmother, the neighbors were completely beside themselves, and promptly vacated the neighborhood. 
 
@@ -8,8 +8,9 @@ Upon moving north, Nana had the good fortune of meeting Betty, who was secretly 
 
 
 My grandmother bought the home next to Betty for a fraction of the cost by the distraught homeowners. By the time my father was born, the neighborhood shifted into a black middleclass west Michigan neighborhood. Nana still lives in this home today. 
- 
-I share this story to provide a little context for any bias I hold onto during my analysis of the 2019 American Survey and John Hopkins Covid morbidity data. Like many, I understand how a zip code profoundly shapes quality of life. 
+
+## About This Project 
+I share this story to provide *context for any bias* I hold onto during my analysis of the 2019 American Survey and John Hopkins Covid morbidity data. Like many, I understand how a zip code profoundly shapes quality of life. 
 
 As I built the scatter plots and summarized the variables, I did my best to let this notion go and let the data speak for itself. 
 Exploring the data taught me so much about Michigan counties! I’ve built interactive tables and plots that highlight the demographics and loss of life due to Covid-19. The story drastically changes county by county. 
