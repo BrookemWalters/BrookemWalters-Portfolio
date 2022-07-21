@@ -23,9 +23,8 @@ The script below:
 
 
 
-### Step 1: 
+### Step 1
 - install packages in console if needed, load the ::tidyverse:: 
-#install.packages(c("pysch", "tidyverse"))
 
 ```{r load tidyverse}
 library(tidyverse)
@@ -56,7 +55,6 @@ table_covid_census <-  covid_census %>%
     `Total Covid Deaths` = "Total_Deaths",
     `Covid Deaths Per Thousand` = "Deaths_Per_Pop_Thousand"
   )
-
 table_covid_census
 ```
 
@@ -69,16 +67,15 @@ table_covid_census
 ```{r five number sum it all}
 sum_table_covid_census <- psych::describe(table_covid_census, fast = TRUE ) %>% 
   mutate_if(is.numeric, round,1)
-
 sum_table_covid_census
 ```
+
 ### Step 4
 - Remove non-numerical variables from the rows, and error message generates for non-numerical values but all is well!
 
 ```{r remove the nonsense rows}
 sum_table_covid_census <- sum_table_covid_census[-c( 1,2, 16, 17,18,19,20),]
 sum_table_covid_census
-
 ```
 
 ### Step 5
@@ -91,7 +88,6 @@ sum_table_covid_census
 sum_table_covid_census <- tibble::rownames_to_column(sum_table_covid_census, "VALUE") %>%
   select(-vars , -n)
 sum_table_covid_census
- 
 ```
 
 
@@ -129,6 +125,10 @@ write.csv(table_covid_census,"~/STA 518/BrookemWalters-Portfolio/Stats 518 Final
 
 
 
+##### [Part Three: Plotting the Data](https://rpubs.com/ekoorb03/Guides_Scatter_Plots)
+
+
+###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
 
 
 

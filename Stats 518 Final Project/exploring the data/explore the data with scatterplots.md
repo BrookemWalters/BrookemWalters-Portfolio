@@ -1,22 +1,20 @@
 ---
 title: "Exploring the Data with Scatter Plots"
 author: "brooke"
-date: "7/16/2022"
+date: "7/21/2022"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
+I created four dynamic scatter plot tables that show the county by county relationships between  covid-19 mortality and :
 
-# Exploring the Data With Scatter Plots"
+- [public housing assistance rate](https://rpubs.com/ekoorb03/plots_pubassistance) 
 
-I created four dynamic scatter plot tables that show the county by county relationships between  covid-19 mortality  and :
-- [public housing assistance rate](https://rpubs.com/ekoorb03/plots_pubassistance)
-- [median age](https://rpubs.com/ekoorb03/plots_medianage)
-- [median income](https://rpubs.com/ekoorb03/plots_income)
-- [higher education attainment](https://rpubs.com/ekoorb03/plots_education)
+- [median age](https://rpubs.com/ekoorb03/plots_medianage) 
+
+- [median income](https://rpubs.com/ekoorb03/plots_income) 
+
+- [higher education attainment](https://rpubs.com/ekoorb03/plots_education) 
 
 
 
@@ -127,12 +125,10 @@ assist_sp <- covid_quintile_chart %>%
   scale_size_continuous(range = c(2, 15)) +
   labs(title = "Michigan Covid Mortality (quintiles) by % of HHs on Assistance", color = "Quintile", size = NULL) +
   scale_color_manual(values = mortal_palette) 
-
 #save the static plot to the "plots" folder
 jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/assist_sp.jpeg",
       width = 1000, height = 650)
 assist_sp 
-
 #display the interactive version
 ia_assist_sp <-  ggplotly(assist_sp )
 ia_assist_sp
@@ -147,13 +143,10 @@ age_sp <- covid_quintile_chart %>%
   scale_size_continuous(range = c(2, 15)) +
   labs(title = "Mortality (quintiles) by Median Age in Michigan Counties", color = "Quintile", size = NULL) +
   scale_color_manual(values = mortal_palette) 
-
 #save the static plot to the "plots" folder
 jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/age_sp.jpeg",
      width = 1000, height = 650)
 age_sp 
-
-
 #display the interactive version
 ia_age_sp <-ggplotly(age_sp)
 ia_age_sp
@@ -167,12 +160,10 @@ ed_sp <- covid_quintile_chart %>%
   scale_size_continuous(range = c(2, 15)) +
   labs(title = "Mortality by Higher Education Attainment in Michigan Counties", color = "Quintile", size = NULL) +
   scale_color_manual(values = mortal_palette) 
-
 #save the static plot to the "plots" folder
 jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/ed_sp.jpeg",
       width = 1000, height = 650)
 ed_sp
-
 #display the interactive version
 ia_ed_sp <- ggplotly(ed_sp )
 ia_ed_sp
@@ -186,12 +177,10 @@ income_sp <- covid_quintile_chart %>%
   scale_size_continuous(range = c(2, 15)) +
  labs(title ="Covid Mortality (quintiles) by Median Household Income in Michigan Counties", color = "Quintile", size = NULL) +
   scale_color_manual(values = mortal_palette) 
-
 #save the static plot to the "plots" folder
 jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/income_sp.jpeg",
       width = 1000, height = 650)
 income_sp
-
 #display the interactive version
 ia_income_sp <- ggplotly(income_sp )
 ia_income_sp
