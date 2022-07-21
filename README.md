@@ -14,7 +14,7 @@
 #### 2.2.4 [Box Plots]
 ### 2.3 [How I Did It]() 
 #### 2.3.1 [Create Retrieve, Wrangle, Mutate, Merge](https://rpubs.com/ekoorb03/Guides_Create_Covid_Census)
-#### 2.3.2.1 [Create Summary Stats Table]](http://rpubs.com/ekoorb03/Guides_Summary_Stats)
+#### 2.3.2.1 [Create Summary Stats Table](http://rpubs.com/ekoorb03/Guides_Summary_Stats)
 #### 2.3.2.2 [Make it a Shiny Table]()
 #### 2.3.4 [Make Dynamic Scatterplots]()
 ### 2. [Conclusion]
