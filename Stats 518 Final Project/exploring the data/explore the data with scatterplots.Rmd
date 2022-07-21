@@ -12,16 +12,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Exploring the Data With Scatter Plots"
 
-I created four dynamic scatter plot tables that show the county by county relationships between  covid-19 morbity and :
-- public housing assistance rate 
-- median age
-- median income
-- higher education attainment
-- 
+I created four dynamic scatter plot tables that show the county by county relationships between  covid-19 mortality  and :
+- [public housing assistance rate]()
+- [median age]()
+- [median income]()
+- [higher education attainment]()
+
 
 the data will be exported into a CVS file and transformed into an aesthetically pleasing dynamic table 
 
-[Here's](link) the final table!
+
 
 
 The script below:
@@ -34,11 +34,12 @@ The script below:
 
 
 ## Step 1
- - Load plotly
+ - Load plotly and tidyverse
 #install package if needed
 
 ```{r load ploty}
 library(plotly)
+library(tidyverse)
 ```
 
 
@@ -47,8 +48,8 @@ library(plotly)
 
 ```{r create quintiles}
 covid_quintile <- covid_census %>% 
-  mutate(quintile_group = ntile(Deaths_Per_Pop_Thousand,5))
-
+  select(population19E, householdsE, median_ageE, median_incomeE, bach_degree_plus_a25E, unemployment_rate, public_assist_rate, percent_asian, percent_black, percent_native, percent_pacific_islander, percent_white, percent_hispanic, County, Total_Deaths, Deaths_Per_Pop_Thousand) %>% 
+  mutate(covid_mortality_quintile = ntile(Deaths_Per_Pop_Thousand,5))
 ```
 
 1 = lowest Covid deaths per 1,000
@@ -56,56 +57,78 @@ covid_quintile <- covid_census %>%
 
 
 ## Step 3
-- Convert the quintile numbers into factors, so the variable can have descrete formatting in the plots
+- Convert the quintile numbers into factors, so the variable can have discrete formatting in the plots
 
 
 ```{r convert to factors}
-covid_quintile$quintile_group <-  covid_quintile$quintile_group %>%  as.factor 
+covid_quintile$covid_mortality_quintile <-  covid_quintile$covid_mortality_quintile %>%  as.factor 
 ```
 
 
 ## Step 4
 - Convert data into tibble for ease of wrangling
 
-```{r}
+```{r tibble}
 covid_quintile <- tibble(covid_quintile)
 ```
 
+## Step 5 
+- Export this data for another project, I'll update the names next and I don't want this to interfere with my calculations
 
-## Step 5
+
+```{r write CSV for bootstrapping}
+
+write.csv(covid_quintile,"~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Bootstrapping/covid_census_bs.csv")
+```
+
+
+
+
+## Step 6
 - Update variable with descriptive names, the other set of descriptive names caused an error if used before this point due to the symbols used
 
 ```{r update names}
-names(covid_quintile )[5] <- "Median Age"
-names(covid_quintile )[6] <- "Median Household Income"
-names(covid_quintile )[7] <- "% of Adults 25+ with College Degrees"
-names(covid_quintile )[9] <- "% of Households on Public Assistance"
-names(covid_quintile )[24] <- "Quintile"
-names(covid_quintile )[23] <- "Covid Deaths Per Thousand"
-names(covid_quintile )[22] <- "Total Covid Deaths"
+
+covid_quintile_chart <-  covid_quintile %>% 
+  rename( 
+    Population = "population19E",
+    Households = "householdsE",
+    `Median Age` = "median_ageE",
+    `Median Household Income` = "median_incomeE",
+    `% A25+ College Grad+` = "bach_degree_plus_a25E",
+    `% of HH on Public Assist.` = "public_assist_rate",
+    `Unemployment Rate` = "unemployment_rate",
+    `% Asian` = "percent_asian",
+    `% Black` = "percent_black",    
+    `% Native American` = "percent_native", 
+    `% Pacific Islander` = "percent_pacific_islander",
+    `% White` = "percent_white",            
+    `% Hispanic` = "percent_hispanic",
+    `Total Covid Deaths` = "Total_Deaths",
+    `Covid Deaths Per Thousand` = "Deaths_Per_Pop_Thousand"
+  )
 ```
 
-## Step 6
+## Step 7
  - Create a color pallet for quintiles
 ```{r create customer color pa;;et}
-morbid_palette <-  c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")
+mortal_palette <-  c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")
 ```
  
 
 
--## Steps 7-11 
+-## Steps 8-12
 - create a scatter plot showing the  relationship between Covid Deaths per 1000, Total Covid Death, Quintiles, 
 - update the x axis with the desired variable, and update the title to reflect the changes
 
-THE LEGEND NEEDS TO BE FIXED TO REFLECT THE BUBBLE SIZE
 
 ```{r housing assistance plots}
-assist_sp <- covid_quintile %>% 
-  ggplot( aes(x = `% of Households on Public Assistance`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+assist_sp <- covid_quintile_chart %>% 
+  ggplot( aes(x = `% of HH on Public Assist.`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=covid_mortality_quintile, text=County)) +
   geom_point(alpha = 6/10) +
   scale_size_continuous(range = c(2, 15)) +
-  labs(title = "% of Michigan HHs on Assistance by Covid Deaths Per Thousand")+
-  scale_color_manual(values = death_palette) 
+  labs(title = "Michigan Covid Mortality (quintiles) by % of HHs on Assistance", color = "Quintile", size = NULL) +
+  scale_color_manual(values = mortal_palette) 
 
 #save the static plot to the "plots" folder
 jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/assist_sp.jpeg",
@@ -122,12 +145,12 @@ ia_assist_sp
 ```{r median age plots}
 
 # static version
-age_sp <- covid_quintile %>% 
-  ggplot( aes(x = `Median Age`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+age_sp <- covid_quintile_chart %>% 
+  ggplot( aes(x = `Median Age`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=covid_mortality_quintile, text=County)) +
   geom_point(alpha = 6/10) +
   scale_size_continuous(range = c(2, 15)) +
-  labs(title = "Median Age in Michigan Counties by Covid Deaths Per Thousand" ) +
-  scale_color_manual(values = morbid_palette) 
+  labs(title = "Mortality (quintiles) by Median Age in Michigan Counties", color = "Quintile", size = NULL) +
+  scale_color_manual(values = mortal_palette) 
 
 #save the static plot to the "plots" folder
 jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/age_sp.jpeg",
@@ -142,12 +165,12 @@ ia_age_sp
 
 
 ```{r education plots}
-ed_sp <- covid_quintile %>% 
-  ggplot( aes(x = `% of Adults 25+ with College Degrees`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+ed_sp <- covid_quintile_chart %>% 
+  ggplot( aes(x = `% A25+ College Grad+`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=covid_mortality_quintile, text=County)) +
   geom_point(alpha = 6/10) +
   scale_size_continuous(range = c(2, 15)) +
-  labs(title = "Higher Education Attainment in Michigan Counties by Covid Deaths Per Thousand" ) +
-  scale_color_manual(values = morbid_palette) 
+  labs(title = "Mortality by Higher Education Attainment in Michigan Counties", color = "Quintile", size = NULL) +
+  scale_color_manual(values = mortal_palette) 
 
 #save the static plot to the "plots" folder
 jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/ed_sp.jpeg",
@@ -161,12 +184,12 @@ ia_ed_sp
 
 
 ```{r income plots}
-income_sp <- covid_quintile %>% 
-  ggplot( aes(x = `Median Household Income`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=Quintile, text=County)) +
+income_sp <- covid_quintile_chart %>% 
+  ggplot( aes(x = `Median Household Income`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color= covid_mortality_quintile, text=County)) +
   geom_point(alpha = 6/10) +
   scale_size_continuous(range = c(2, 15)) +
- labs(title ="Median Household Income in Michigan Counties by Covid Deaths Per Thousand" ) +
-  scale_color_manual(values = morbid_palette) 
+ labs(title ="Covid Mortality (quintiles) by Median Household Income in Michigan Counties", color = "Quintile", size = NULL) +
+  scale_color_manual(values = mortal_palette) 
 
 #save the static plot to the "plots" folder
 jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/income_sp.jpeg",
@@ -174,19 +197,14 @@ jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plot
 income_sp
 
 # display the interactive version
-ia_ed_sp <- ggplotly(ed_sp )
-ia_ed_sp
-```
-
 ia_income_sp <- ggplotly(income_sp )
-ia_income_sp 
+ia_income_sp
 ```
 
-## Step 12
-- set working directory
-- export static graphs
 
 
+
+###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
 
 
 

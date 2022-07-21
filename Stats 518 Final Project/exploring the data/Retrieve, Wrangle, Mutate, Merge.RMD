@@ -1,35 +1,40 @@
 ---
-title: "Creating the dataset"
+title: "Create Retrieve, Wrangle, Mutate, Merge"
 author: "brooke"
-date: "7/12/2022"
+date: "7/23/2022"
 output: html_document
 ---
+### Welcome to my project!
 
-# Create Retrieve, Wrangle, Mutate, Merge
-Welcome to my project!
+
 
 
 *The Script Below:* 
-1) Retrieves the most up to date covid death totals for the state of Michigan by county
-2) Calculates county covid deaths per 1000
-3) Pulls the most recent ACS demographic estimates (2019 is the most current release as of today)
-4) Calculates, county rate of unemployment, public assistance usage, racial composition, etc
-5) Merges the [JHU CSSE COVID-19](https://github.com/CSSEGISandData/COVID-19.) morbidity data with the [American Community Survey (ACS)](https://www.census.gov/data/developers/data-sets/acs-5year.html) estimates into a CSV file for export
 
-[Here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Introduction.md) explains the inspiration and the bias I bring to my data analysis. 
+- Retrieves the most up-to-date covid death totals for the state of Michigan by county 
+- Calculates county covid deaths per 1000 
+- Pulls the most recent ACS demographic estimates (2019 is the most current release as of today) 
+- Calculates, county rate of unemployment, public assistance usage, and racial compositions 
+- Merges the [JHU CSSE COVID-19](https://github.com/CSSEGISandData/COVID-19) morbidity data with the [American Community Survey (ACS)](https://www.census.gov/data/developers/data-sets/acs-5year.html) estimates into a CSV file for export
+
+[Here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Introduction.md#introduction-to-michigan-counties-in-a-pandemic) explains the inspiration and the potential bias I bring to my data analysis. 
 
 
-### Step 0 : connect the census via *API* [(full explanation here)][https://www.census.gov/programs-surveys/acs/data/data-via-api.html]
-- To connect to the census data request a key from: https://api.census.gov/data/key_signup.html
+### Step 0 : connect the census via **API**
+[(full API directions here)](https://www.census.gov/programs-surveys/acs/data/data-via-api.html)
+
+- To connect to the census data request a key from:[api.census.gov](https://api.census.gov/data/key_signup.html)
 - Run the census_api_key code below: 
   - census_api_key("INSERT KEY HERE)", install = TRUE)
-*you only have to do this one time*
+  
+  (*you only have to do this one time*)
 
-## Part One -> Retrieving the Lastest Covid Deaths by County,
+## **Part One** Retrieving the Lastest Covid Deaths by County,
 
 
 ### Step 1: 
-- install packages in console if needed, load the ::tidyverse:: 
+- install packages in console if needed, load the ::tidyverse::
+
 #install.packages(c("tidycensus", "tidyverse"))
 
 
@@ -54,7 +59,7 @@ us_cd_deaths <- read_csv(jh_covid_repo)
 
 
 ### Step 1.3:  
-- Filter the data by Michigan, and create a new value 
+- filter the data by Michigan, and create a new value 
 
 ```{r isolate michigan counties from the data set}
 mi_cd_deaths <- filter(us_cd_deaths, Province_State == "Michigan" )
@@ -68,19 +73,21 @@ mi_cd_deaths <- filter(us_cd_deaths, Province_State == "Michigan" )
 ```{r pull relevant variables into wide form}
 # deaths are cumulative, pull the last column for the most current sum
 mi_cd_deaths <- mi_cd_deaths %>% 
-select(Admin2, Province_State, Lat, Long_, Population, FIPS, length(names(mi_cd_deaths)))
+select(Admin2, Province_State, Lat, Long_, Population, FIPS, length(names(mi_cd_deaths))) %>% 
 
 #update column names from dates to death, and change combined key to county for joins later
-names(mi_cd_deaths)[7] <- "Total_Deaths"
-names(mi_cd_deaths)[1] <- "County"
-names(mi_cd_deaths)[2] <- "state_name"
-names(mi_cd_deaths)[6] <- "county_fips"
+  rename(  
+  County = "Admin2",
+  state_name = "Province_State",
+  county_fips = "FIPS"
+  )
 
+names(mi_cd_deaths)[7] <- "Total_Deaths" 
 ```
 
 
 ### Step 1.5: 
- - create a covid death rate per thousand, around round to the nearest hundredths place
+ - create a covid death rate per thousand (mortality rate), around round to the nearest hundredths place
 
 ```{r update total deaths to deathrate}
 mi_cd_deaths <- mutate(mi_cd_deaths, Deaths_Per_Pop_Thousand =  (Total_Deaths / (Population / 1000 )))
@@ -100,7 +107,7 @@ library(tidycensus)
 
 
 ### Step 2.2: 
-- Pull data from [ACS:](https://data.census.gov/cedsci/table?g=0400000US26%240500000_0500000US26007&y=2020&d=ACS%205-Year%20Estimates%20Data%20Profiles&tid=ACSDP5Y2020.DP02)
+- pull data from [ACS:](https://data.census.gov/cedsci/table?g=0400000US26%240500000_0500000US26007&y=2020&d=ACS%205-Year%20Estimates%20Data%20Profiles&tid=ACSDP5Y2020.DP02)
 - assign data value "v20"
 - capture all of the variable names in CSV format for reference
 
@@ -112,7 +119,7 @@ write.csv(v20,"~/STA 518/Stat-518-Portfolio/Final Project/Mi_Covid/data/variable
 ```
 
 ### Step 2.3: 
-- Create function to select relevant estimates to automate 1 step of trimming out unused variables
+- create function to select relevant estimates to automate 1 step of trimming out unused variables
 
 ```{r estimate function }
 estimates_only_by_GEOID <- function(x){
@@ -123,11 +130,11 @@ estimates_only_by_GEOID <- function(x){
 
 
 For steps 2.4 - 2.6 I'll pull the ACS variables in two chunks, it's easier to manage the calculations this way
-- Set one economic factors
-- Set two racial population estiamtes
+- set one economic factors
+- set two racial population estimates
 
 ### Step 2.4 
- - Pull Factors:   population, and estimates: household, median age, median income, unemployed population, labor force population, households on public assistant,  and adults over 25 with a bachelor's degree or higher
+ - pull factors:   population, and estimates: household, median age, median income, unemployed population, labor force population, households on public assistant,  and adults over 25 with a bachelor's degree or higher
 
 ```{r health determinate variables}
 ac_eccon_factors <- get_acs(
@@ -148,9 +155,9 @@ ac_eccon_factors <- get_acs(
 
 
 ### Step 2.5 
-- Create unemployment and public assistance rates, 
-- Remove the counts
-- Round for aesthetics 
+- create unemployment and public assistance rates, 
+- remove the counts
+- round for aesthetics 
 
 ```{r pull social health determinants}
 # use the function created above to select the relevant estimates 
@@ -171,7 +178,7 @@ glimpse(ac_eccon_factors)
 
 
 ### Step 2.6 
-- Pull county racial population variables
+- pull county racial population variables
 
 ```{r Why do you have to bring race into it}
 ac_race_factors <- get_acs(
@@ -191,8 +198,8 @@ ac_race_factors <- get_acs(
 
 
 ### 2.7
- - Create population rates by racial composition
- - Round the values for consistency 
+ - create population rates by racial composition
+ - round the values for consistency 
  - **Note *GEOID* will be used to join the two sets of ACS variables**
 ```{r create racial percents}
 #select estimates
@@ -218,7 +225,7 @@ this is where things get exciting!
 time to merge the 2 census sets with the covid data by county!
 
 ## Step 2.8
-- Join the eccomonic factors with the racial estimates
+- join the eccomonic factors with the racial estimates
 
 ```{r join both census sets}
 ac_eccon_factors <-  left_join(ac_eccon_factors, ac_race_factors, by = "GEOID")
@@ -227,7 +234,7 @@ glimpse(ac_eccon_factors)
 
 
 ## Step 2.9
-- Split the "Name Field" (County, State) to remove the state, allowing the ACS and the JHU CSSE COVID-19 data to join with a common variable and field name
+- split the "Name Field" (County, State) to remove the state, allowing the ACS and the JHU CSSE COVID-19 data to join with a common variable and field name
 ```{r}
 ac_eccon_factors <- ac_eccon_factors %>% 
   mutate(County = str_remove_all(NAME, " County, Michigan"))
@@ -245,5 +252,10 @@ glimpse(covid_census)
 write.csv(covid_census,"~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/data/covid_census.csv")
 ```
 
-#Success!!! Data cleaning complete
+### Success!!! Data cleaning complete!
+
+##### [Part Two: Summarizing the Data](http://rpubs.com/ekoorb03/Guides_Summary_Stats)
+
+
+###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
 

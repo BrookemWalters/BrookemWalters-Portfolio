@@ -1,0 +1,13 @@
+name: MI_Covid_County_Tables
+title: MI_Covid_County_Tables
+username:
+account: 073308-brooke
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6666246
+bundleId: 6113983
+url: https://073308-brooke.shinyapps.io/MI_Covid_County_Tables/
+when: 1658283089.21159
+lastSyncTime: 1658283089.2116
+asMultiple: FALSE
+asStatic: FALSE

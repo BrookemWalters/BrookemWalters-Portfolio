@@ -1,4 +1,4 @@
-# Introduction to Michigan Counties in a Pandemic
+# Introduction to [Working Title]
 
 At the age of 16, my grandmother “Nana” left her parents and ten siblings behind in pursuit of a better life in Grand Rapids, Michigan. Her parents were sharecroppers, and if you know anything about 1950’s Alabama – life wasn’t exactly ideal for a young black woman. 
 
@@ -22,8 +22,9 @@ Going into this, admittedly I was pretty ignorant of my home state.
 - There is a county that is 50% non-white, it’s also the same county that has the highest percentage of households on public assistance and falls into the 4th quintile for Covid-19 deaths per thousand. 
 - The county with the highest percentage college graduates, also has the highest percentage of Asians, has one of the lowest median ages and the top third highest income. This county falls in the lowest quintile for Covid-19 deaths.
 
-By the next deadline, the correlation between county demographic composition and Covid-19 morbidly will be explored further. 
+By the next deadline, the correlation between county demographic composition and Covid-19 morbidity will be explored further. 
 
-I hope you find this data fascinating, and provides you with a new insight into Michigan counties. 
+I hope you my work provides you with a new perspective into Michigan counties
+
 
 ###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---

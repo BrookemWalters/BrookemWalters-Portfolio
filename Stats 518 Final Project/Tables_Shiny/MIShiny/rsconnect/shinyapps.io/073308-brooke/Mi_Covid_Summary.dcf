@@ -1,0 +1,14 @@
+name: Mi_Covid_Summary
+title: Mi_Covid_Summary
+username:
+account: 073308-brooke
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6671538
+bundleId: 6117787
+url: https://073308-brooke.shinyapps.io/Mi_Covid_Summary/
+when: 1658370301.94661
+lastSyncTime: 1658370301.94662
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: covid_census_summary_stats.csv|Covid_Census_Table.csv|covid_mortality_summary.csv

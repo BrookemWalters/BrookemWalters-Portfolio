@@ -1,0 +1,20 @@
+---
+title: "covid_bootstrapping"
+author: "brooke"
+date: "7/20/2022"
+output: html_document
+---
+
+
+The following script does:
+
+
+
+Read in the data
+
+```{r read in the data}
+
+
+
+```
+
