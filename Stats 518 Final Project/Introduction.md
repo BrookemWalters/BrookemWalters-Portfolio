@@ -2,15 +2,15 @@
 
 At the age of 16, my grandmother “Nana” left her parents and ten siblings behind in pursuit of a better life in Grand Rapids, Michigan. Her parents were sharecroppers, and if you know anything about 1950’s Alabama – life wasn’t exactly ideal for a young black woman. 
 
-Upon moving north, Nana had the good fortune of meeting Betty, who was secretly dating a well-to-do judge. Betty’s boyfriend bought her a house in a white middleclass neighborhood… This was a HUGE scandal. You see, blacks were not “*allowed*” to own property in that part of town. Betty’s boyfriend found a loophole. According to my grandmother, the neighbors were completely beside themselves, and promptly vacated the neighborhood. 
+Upon moving north, Nana had the good fortune of meeting Betty, who was secretly dating a well-to-do judge. Betty’s boyfriend bought her a house in a white middle-class neighborhood… This was a HUGE scandal. You see, blacks were not “*allowed*” to own property in that part of town. Betty’s boyfriend found a loophole. According to my grandmother, the neighbors were completely beside themselves, and promptly vacated the neighborhood. 
 
 ![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Dramatic%20Images/ConsciousPowerfulColt-max-1mb.gif?raw=true)
 
 
-My grandmother bought the home next to Betty for a fraction of the cost by the distraught homeowners. By the time my father was born, the neighborhood shifted into a black middle-class west Michigan neighborhood. Nana still lives in this home today. 
+My grandmother bought the home next to Betty for a fraction of the cost by the distraught homeowners. By the time my father was born, the neighborhood shifted into a black middle-class west Michigan neighborhood. Nana still lives in this home today. I wonder how her life would have turned out if she'd remained in the south, her zip code changed everything. 
 
 ### About This Project 
-I share this story to disclose my potential bias that may shape my analysis of the 2019 [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/about.html) and the Covid-19 data provided by  [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19). Like many, I understand how a zip code profoundly shapes quality of life. 
+I share this story to disclose my potential bias that may shape my analysis of the 2019 [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/about.html) and the Covid-19 data provided by  [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19). Like many, I understand how a community profoundly shapes quality of life. 
 As I built the scatter plots and summarized the variables, I did my best to let this notion go and let the data speak for itself.
 
 
