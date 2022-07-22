@@ -36,8 +36,9 @@ My Stat 518 project seeks to understand the relationship between COVID-19 deaths
 This report holds interactive tables and scatter plots for you to explore.
 By the next deadline, the correlation between county demographic composition and Covid-19 mortality will be explored further. 
 
-*As of July 23rd 2022, this data reflects COVID-19 deaths up to July 20th 2022, I'll update the script to automate the date in the sourcing."
-I hope my work provides you with a new perspective into Michigan counties, now on the the plots!
+*As of July 23rd 2022, this data reflects COVID-19 deaths up to July 20th 2022, I'll update the script to automate the date in the sourcing.*
+
+**I hope my work provides you with a new perspective into Michigan counties, now onto the plots!**
 
 
 ### Here's the Results:
