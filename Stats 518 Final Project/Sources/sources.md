@@ -1,6 +1,6 @@
 # Sources
 
-##Data Sources: 
+## Data Sources: 
 - [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/about.html)
 - COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
 
