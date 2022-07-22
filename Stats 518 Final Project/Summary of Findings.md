@@ -32,7 +32,7 @@ I share these things, not to excuse my ignorance, but enlighten you on why I pic
 While I had a peripheral understanding of COVID-19’s devastating impact on the world at large, I was blind to many of the state-wide implications. 
 This project is an attempt to rectify my knowledge gap, and inform others in a similar position.
 
-*This is a work in progress, and more analysis is needed to compute the statistical significance the findings. (And I need to add sourcing to the plots!)
+*This is a work in progress, and more analysis is needed to compute the statistical significance of the findings. (And I need to add sourcing to the plots!)
 
 
 
