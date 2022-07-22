@@ -15,14 +15,15 @@ My Stat 518 project seeks to understand the relationship between COVID-19 deaths
 ### **Project Description:**
 **I’ve written a script that automatically:**
 
-- Pulls and aggregates the most recent cumulative count of Covid-19 deaths for Michigan by County 
-- Calculates death rate per thousand, and breaks that group into 5 risk segments (quintiles), 1 being the lowest rate of Covid-19 deaths per 1000
+- Pulls and aggregates the most recent cumulative count of COVID-19 deaths for Michigan by County 
+- Calculates death rate per thousand, and breaks that group into 5 risk segments (quintiles), 1 being the lowest rate of COVID-19 deaths per 1000
 - Pulls the latest ACS population estimates
 - Calculates the unemployment, education rates, median income, median age, and county racial compositions
 - Joins the two datasets together
-- Plots the variables to explore the correlation between variables
+- Calculates the summary statisic of numeric variables 
+- Vizualizes the data into tables and scatter plots 
 - **to do:** side by side box plots of quintiles by race
-- **to do:** bootstrapping -> can I use the unemployment rate to predict Covid-19 percentile???
+- **to do:** bootstrapping -> can I use the unemployment rate to predict COVID-19 percentile???
 
 
 #### [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources): American Community Survey [(ACS)](https://www.census.gov/programs-surveys/acs/about.html), and the COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
