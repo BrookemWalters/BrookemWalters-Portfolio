@@ -11,7 +11,7 @@ While my project is not quite up to the bar I’ve set for myself, given that I 
 #### **Here are a few artifacts and evidence of my new skillset:**
 
 -	My *[Retrieve, Wrangle, Mutate, Merge](https://rpubs.com/ekoorb03/Guides_Create_Covid_Census)* guide documents my ability to transform data from two separate open source hosts through an API, and retrieve the most current numbers at a click of a button. 
-    -	In this document, I outline how to leverage the ::tidyverse:: and ::tidycensus:: packages to discover the population trends of Michigan counties, and tidy up variables to join the datasets. \
+    -	In this document, I outline how to leverage the ::tidyverse:: and ::tidycensus:: packages to discover the population trends of Michigan counties, and tidy up variables to join the datasets. 
    
       
 -	From there, I’ve provided readers with a summary of findings in the *[Exploring the Data With Summary Stats]( https://rpubs.com/ekoorb03/Guides_Summary_Stats)*
