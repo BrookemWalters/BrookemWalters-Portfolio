@@ -15,7 +15,7 @@ My Stat 518 project seeks to understand the relationship between COVID-19 deaths
 ### **Project Description:**
 **I’ve written a script that automatically:**
 
-- Pulls and aggregates the most recent cumulative count of COVID-19 deaths for Michigan by County 
+- Pulls and aggregates the most recent cumulative count of COVID-19 deaths for Michigan by county 
 - Calculates death rate per thousand, and breaks that group into 5 risk segments (quintiles), 1 being the lowest rate of COVID-19 deaths per 1000
 - Pulls the latest ACS population estimates
 - Calculates the unemployment, education rates, median income, median age, and county racial compositions
