@@ -9,7 +9,7 @@
 
 ***
 
-##  **COVID-19 Mortality and Socioeconomic Trends in Michigan by County(Stat 518 Final Project)**
+##  **COVID-19 Mortality and Socioeconomic Trends in Michigan by County (Stat 518 Final Project)**
 
 - ### [Introduction](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Introduction.md#introduction-to-michigan-counties-in-a-pandemic)
 - ### [Findings]() *TO DO*
