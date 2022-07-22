@@ -15,7 +15,7 @@ My Stat 518 project seeks to understand the relationship between COVID-19 deaths
 
 
 The global collaboration to document and report the status of the pandemic over the last few years is truly remarkable. However, the longer the quarantine went on, 
-the more focused inward. 
+the more I focused inward. 
 
 
 #### **During the pandemic I:**
