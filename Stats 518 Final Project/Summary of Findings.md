@@ -41,8 +41,10 @@ By the next deadline, the correlation between county demographic composition and
 **I hope my work provides you with a new perspective into Michigan counties, now onto the plots!**
 
 
-### Here's the Results:
-*Click on the header for the interactive version*
+## Here are the Results:
+#### *Click on the header for the interactive version*
+
+
 
 #### [Table of County Demographics and COVID-19 Mortality](https://073308-brooke.shinyapps.io/MIShiny/)
 [insert static image]
