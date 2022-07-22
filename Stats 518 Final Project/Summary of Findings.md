@@ -18,7 +18,7 @@ My Stat 518 project seeks to understand the relationship between COVID-19 deaths
 - Pulls and aggregates the most recent cumulative count of Covid-19 deaths for Michigan by County 
 - Calculates death rate per thousand, and breaks that group into 5 risk segments (quintiles), 1 being the lowest rate of Covid-19 deaths per 1000
 - Pulls the latest ACS population estimates
-- Calculates the unemployment, education rates, county racial compositions
+- Calculates the unemployment, education rates, median income, median age, and county racial compositions
 - Joins the two datasets together
 - Plots the variables to explore the correlation between variables
 - **to do:** side by side box plots of quintiles by race
