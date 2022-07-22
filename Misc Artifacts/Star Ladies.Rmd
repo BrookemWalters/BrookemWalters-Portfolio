@@ -1,0 +1,245 @@
+---
+title: "Star Ladies"
+author: "brooke"
+date: "6/23/2022"
+output: html_document
+---
+
+---
+title: "Star Ladies"
+author: "brooke"
+date: "6/23/2022"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+For the Star Wars table assignment, I thought it would be interesting to explore the breakdown of feminine characters. Here is my exploratory analysis where I:
+
+-`create tables` 
+-`create barcharts`
+-`calculate the five-number-summary of a variable`
+-`create side by side box plots`
+
+
+First install the `{Tidyverse}` 
+
+```{r find and filter}
+library(tidyverse)
+
+#filter by female, and select a couple of characteristics for comparison
+sw_lady <-starwars %>% 
+  filter( gender == "feminine") %>% 
+  arrange(name) %>% 
+  select(name, birth_year, homeworld, species, height, hair_color, eye_color, skin_color)
+sw_lady
+```
+
+Time to summarize the list into a table!
+Install the `{gt}` package in the console
+
+```{r load the gt library}
+library(gt)
+```
+
+
+```{r create table of female star wars characters}
+sw_lady_plain <- 
+sw_lady %>% 
+  gt()
+
+sw_lady_plain
+```
+##### I can document my code
+I used [Introduction to Creating gt Tables](https://gt.rstudio.com/articles/intro-creating-gt-tables.html) walk through to jazz up the table.  
+Additionally,  I found inspiration from R Studio's [Table Battles](https://youtu.be/-c_PUee8Cu0).
+
+
+```{r jazz up the table}
+sw_lady_pretty <- 
+ sw_lady %>% 
+  gt() %>% 
+ 
+# Add a header
+   tab_header (
+    title = md("The *17* Feminine Characters of Star Wars"),
+    subtitle = md("stats and facts")
+  ) %>% 
+  opt_align_table_header(align = "left") %>% 
+    tab_source_note(
+    source_note = md( "Dataset is from the `starwars` **R** package") 
+  ) %>% 
+  
+#Clean up the column headers  
+  opt_all_caps() %>% 
+  cols_label(
+    name = "Name",
+    birth_year = "Birth Year",
+    homeworld = "Homeworld",
+    species = "Species",
+    height = "Height",
+    hair_color = "Hair Color",
+    skin_color = "Skin Color",
+    eye_color = "Eye Color",
+    ) %>% 
+  cols_width(
+    name ~ px(200),
+    birth_year ~px(100),
+    species ~ px(200),
+    height ~ px(200),
+    hair_color ~ px(100),
+    eye_color ~ px(100),
+    skin_color ~ px(200),
+  ) %>% 
+  
+# call out the character with the most missing features
+   tab_source_note(
+    source_note = md("*Little is known about Rey*")
+  ) %>%   
+  tab_style(
+    locations = cells_body(
+      columns = everything(),
+      rows = 13
+    ),
+    style = list(
+      cell_fill(color="#CC0033"),
+      cell_text( color = "white")
+       ))
+ 
+sw_lady_pretty
+```
+
+
+After making the initial table, I was intrigued to learn that there are only 16 female / 17 feminine characters in the entire data set. I was curious to see what the breakdown of male to female  by species type. 
+So let’s make a table using the unfiltered data. 
+
+
+```{r create stacked bar charts}
+ggplot(data = starwars, mapping = aes(x = species, fill = gender)) +
+  geom_bar() +
+  coord_flip() +
+  labs(title = "Gender Composition by Species") 
+```
+
+Reviewing this chart, we can observe a few trends: 
+* the majority of species only have one  character 
+* the vast majority of characters are male (we already knew this from the table) 
+* the Mirialan species  is unique, this species only has two characters, both of which are female 
+* humans represent most characters 
+
+
+I'd like to make it easier to determine which species has the largest percentage of female characters.
+I know there is a better way to do this, I'll need to explore this more!
+Here's my attempt: 
+
+```{r data wrangling }
+gender_comp <- starwars %>% 
+  group_by(gender, species) %>% 
+  summarise(gender_count = n()) %>% 
+  pivot_wider(names_from = gender,
+              values_from = gender_count) %>% 
+#reduce the table to species with fem characters  
+  filter(feminine > 0)
+ #create new column for fem to masc ratio
+ 
+```
+
+This gets me closer, to understanding the gender composition at a glance, but I'd prefer to see the percentages
+I'll make a few new columns.
+
+```{r Creating calculations and new variables}
+gender_comp <-  gender_comp %>% 
+#mutate(fem_perc =  feminine / (feminine + masculine, na.rm = TRUE)) this failed?? another opportunity to learn how to do this the correct way.
+  mutate(masculine = replace_na(masculine, 0)) %>% 
+  mutate(spec_perc_fem = feminine / (feminine + masculine)) %>% 
+  mutate(fem_charc_count =  feminine) %>% 
+#omit the irrelevant columns
+  select(species, fem_charc_count, spec_perc_fem) %>% 
+  arrange(desc(fem_charc_count))
+gender_comp
+```
+
+```{r gender comp by species table}
+gender_comp %>% 
+  gt() %>% 
+# Add a header
+   tab_header (
+    title = md(" Percentage Feminine Characters of Star Wars"),
+    subtitle = md("*by species*")
+  ) %>% 
+  #clean up the columns
+   opt_all_caps() %>% 
+  cols_label(
+    species = "Species",
+    fem_charc_count = "Total Fem Characters",
+    spec_perc_fem = "% Fem",
+  ) %>% 
+  #add a few notes
+  opt_align_table_header(align = "left") %>% 
+    tab_source_note(
+    source_note = md( "Dataset is from the `starwars` **R** package") 
+  ) %>% 
+    tab_source_note(
+    source_note = md("**how to read:** 25.7% of human characters are feminine")
+  ) 
+```
+
+
+Ideally, I'd format this table to show the decimals as a percentage, that is a new skill I must learn another day. 
+
+
+Lastly, while I am here, I should demonstrate a five number summary. It's probably best not to use my ghastly **percentage female variable**, as I've omitted the N/A and replaced them with zeros, and the data will  be skewed.
+
+**Instead,** let's compare the mass of everyone.
+
+```{r fivenumber summary}
+chunkywars <-  starwars %>% 
+  select(mass) %>% 
+  fivenum()
+chunkywars  
+```
+
+Beautiful, there is one Chonker of a creature coming in a 1358.0 (lbs?? I'm not sure)
+
+```{r find the Chonker}
+filter(starwars, mass == 1358)
+```
+#### I can use outside resources to troubleshoot
+And for grand finale of Chunky Wars, side by side box plots!
+
+```{r bad box plot}
+ggplot(data = starwars, mapping = aes(y = mass, x = gender, fill = species)) +
+  geom_boxplot()
+```
+
+Okay this is messy and more disturbing than cargo pants. 
+
+
+```{r box plots without species}
+ggplot(data = starwars, mapping = aes(y = mass, x = gender, fill = gender)) +
+  geom_boxplot()
+```
+
+This is better but still hideous! Jabba is **ruining** my plot!
+I'll take him out of the equation, and a header and  **voilà**  
+We can see at a glance  that the median weight for masculine characters is roughly 25 units more than femininie characters
+
+```{r box plot without outliers}
+ggplot(data = starwars, mapping = aes(y = mass, x = gender, fill = gender)) +
+ geom_boxplot(outlier.shape = NA) +
+ coord_cartesian(ylim=c(0, 105)) +
+  labs(title = "Mass by Gender") 
+```
+
+Thanks [Statology](https://www.statology.org/remove-outliers-in-boxplots-r/) for help removing the outliers.
+Ideally, I'd like to reformat the scale to include the chonker and still have the plot be readable. 
+This is another skill to add to the growing "to-do list". 
+
+Below is the before and after of the box plots:
+![Mass by Gender with and without the Chonker](https://github.com/BrookemWalters/Portfolio-Stats-518/blob/main/images/Good%20vs%20Bad%20BP.png) 
+\
+This concludes my Star Ladies Adventure. 
