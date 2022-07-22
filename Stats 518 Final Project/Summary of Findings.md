@@ -20,7 +20,7 @@ My Stat 518 project seeks to understand the relationship between COVID-19 deaths
 - Pulls the latest ACS population estimates
 - Calculates the unemployment, education rates, median income, median age, and county racial compositions
 - Joins the two datasets together
-- Calculates the summary statisticss of the numeric variables 
+- Calculates the summary statistics of the numeric variables 
 - Vizualizes the data into tables and scatter plots 
 - **to do:** side by side box plots of quintiles by race
 - **to do:** bootstrapping -> can I use the unemployment rate to predict COVID-19 percentile???
