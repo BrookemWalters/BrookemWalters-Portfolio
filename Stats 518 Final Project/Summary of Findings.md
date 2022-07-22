@@ -60,7 +60,7 @@ This project is an attempt to rectify my knowledge gap, and inform others in a s
 ### **Here's the results:**
 *Click on the header for the interactive version*
 
-#### [Table of County Demographics and COVID-19 Mortality](https://rpubs.com/ekoorb03/Guides_Summary_Stats)
+#### [Table of County Demographics and COVID-19 Mortality](https://073308-brooke.shinyapps.io/MIShiny/)
 [insert static image]
 - *interesting finding*
 \
