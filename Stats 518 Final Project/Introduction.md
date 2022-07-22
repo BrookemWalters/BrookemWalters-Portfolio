@@ -7,7 +7,7 @@ Upon moving north, Nana had the good fortune of meeting Betty, who was secretly 
 ![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Dramatic%20Images/ConsciousPowerfulColt-max-1mb.gif?raw=true)
 
 
-My grandmother bought the home next to Betty for a fraction of the cost by the distraught homeowners. By the time my father was born, the community shifted into a black middle-class West Michigan neighborhood. In the late 80's a large public housing project was proposed and constructed next to my grandmother's home, and the community evolved again. Nana still lives here today. 
+My grandmother bought the home next to Betty for a fraction of the cost by the distraught homeowners. By the time my father was born, the community shifted into a black middle-class West Michigan neighborhood. In the 1980's, a large public housing project was proposed and constructed next to my grandmother's home, and the community evolved again. Nana still lives here today. 
 
 ### Acknowledging Bias
 I share this story to disclose my potential bias that may shape my analysis of the 2019 [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/about.html) and the COVID-19 data provided by  [John Hopkins University](https://github.com/CSSEGISandData/COVID-19). Like many, I understand how a zip code profoundly shapes quality of life. 
