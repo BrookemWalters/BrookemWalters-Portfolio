@@ -24,7 +24,7 @@ document. I’ve created three tables in a ::shiny:: app for a county by county 
 
 -	*[Exploring the Data with Scatter Plots]( https://rpubs.com/ekoorb03/Guides_Scatter_Plots)* demonstrates how to utilize the ::plotly:: package to visualize and explore the relationship between two variables. 
 
-    - I segmented the data into quintiles to reveal at a glance the differences of Michigan county population composition based on COVID-19 mortality, and created my own quintile color pallet for graphic consistency. I love the ability of ::plotly:: to provide labels via hovering over the plot of interest. It allows the enduser to understand more about the variable without cluttering up the graphs.
+    - I segmented the data into quintiles to reveal at a glance the differences of Michigan county population composition based on COVID-19 mortality, and created my own quintile color pallet for graphic consistency. I love the ability of ::plotly:: to provide labels via hovering over the plot of interest. It allows the end user to understand more about the variable without cluttering up the graphs.
   
      -	Here are the Michigan plots in their current form: 
         - [COVID-19 Mortality by Public Housing Assistance Rate](https://rpubs.com/ekoorb03/plots_pubassistance)
