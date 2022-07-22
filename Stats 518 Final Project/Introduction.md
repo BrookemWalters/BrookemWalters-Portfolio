@@ -14,7 +14,7 @@ I share this story to disclose my potential bias that may shape my analysis of t
 As I built the scatter plots and summarized the variables, I did my best to let this notion go and let the data speak for itself.
 
 Throughout this process I learned so much about Michigan! In terms of demographics, Michigan counties vary widely. Admittedly, I was pretty ignorant of my home state.
-The final summary is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county).
+**The final summary is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county).**
 
 
 **Here are a few things I learned throughout this project:**
