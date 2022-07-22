@@ -16,16 +16,21 @@ As I built the scatter plots and summarized the variables, I did my best to let 
 Throughout this process I learned so much about Michigan! In terms of demographics, Michigan counties vary widely. Admittedly, I was pretty ignorant of my home state.
 **The final summary is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county).**
 
+### Why this topic?
+The global collaboration to document and report the status of the pandemic over the last few years is truly remarkable. However, the longer the quarantine went on, 
+the more I focused inward. **During the pandemic I:**
+- Returned from a year abroad
+- Ended my 8 year military career
+- Got married
+- Had my first child
+- Bought a house
+- Enrolled in grad school
+- Changed careers
 
-**Here are a few things I learned throughout this project:**
-- There is a county in Michigan that is 16% Native American (the median percentage in MI is under 1%).
-- There is a county that is 50% non-white, it’s also the same county that has the highest percentage of households on public assistance and falls into the 4th quintile for Covid-19 deaths per thousand. 
-- The county with the highest percentage of college graduates, also has the highest percentage of Asians, has one of the lowest median ages and ranks third for highest income in Michigan. This county falls in the lowest quintile for Covid-19 deaths.
+I share these things, not to excuse my ignorance, but enlighten you on why I chose a widely reported topic. 
 
-This report holds interactive tables and scatter plots for you to explore.
-By the next deadline, the correlation between county demographic composition and Covid-19 mortality will be explored further. 
-
-I hope my work provides you with a new perspective into Michigan counties.
+While I had a peripheral understanding of COVID-19’s devastating impact on the world at large, I was blind to many of the state-wide implications. 
+This project is an attempt to rectify my knowledge gap, and inform others in a similar position.
 
 
 ###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
