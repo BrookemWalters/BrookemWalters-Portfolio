@@ -27,7 +27,7 @@ the more I focused inward.
 - Enrolled in grad school
 - Changed careers
 
-I share these things, not to excuse my ignorance, but enlighten you on why I picked such as a well reported topic. 
+I share these things, not to excuse my ignorance, but enlighten you on why I picked such a widely reported topic. 
 
 While I had a peripheral understanding of COVID-19’s devastating impact on the world at large, I was blind to many of the state-wide implications. 
 This project is an attempt to rectify my knowledge gap, and inform others in a similar position.
