@@ -1,15 +1,40 @@
 # Growth as a Data Person #
 
-I am thrilled to be a part of this 418/518 stats class. Although it feels a bit like drinking from a firehose at times, I’ve been able to build upon lessons learned from previous courses and tap into my business acumen. I’m also unlearning the bad habits that have years in the making, for instance sloppy version control, and lack of documentation. 
+I am at the primordial stage of my data science journey. This semester confirmed that data science is the path I want to explore further. As I wrote my Stats 518 project, “[COVID-19 Mortality and Socioeconomic Trends in Michigan by County]( ),” I gained a new appreciation for statistical computing, and look forward to acquiring the knowledge to build complex models. 
 
-I recognize the power of chasing the small wins, like the moment the piping method clicked. Like water, the data flows through the pipe – *now that’s a clever naming convention!* I understand with persistence and curiosity, I’ll be able to translate my daydreams into code.  Learning to code has been a goal of mine for YEARS, after misguided attempts at online courses, the structure of academia is just what I needed. I finally feel like I’m making progress!  
 
-Before this class, I was comfortable analyzing, aggregating, and visualizing data at a base level. Up until this point, my experience wrangling data had an intense focus around consumer segmentation and behavior for the purpose of perpetuating consumerism.   I heavily used point and click software that required a smidgen of SQL, like [Neustar Element One](https://www.home.neustar/resources/videos/elementone_demo).  The software did all of the heavy lifting regarding statistical computing. 
+Before this class, I was comfortable analyzing, aggregating, and visualizing data at a base level. Up until this point, my experience wrangling data had an intense focus around consumer segmentation and behavior for the purpose of perpetuating consumerism.  I heavily used point and click software that required a smidgen of SQL, like [Neustar Element One](https://www.home.neustar/resources/videos/elementone_demo).  The software did all of the statistical heavy lifting. 
 
-Throughout this course, I’ve learned to appreciate the benefits of coding under a statistical lens. It’s similar to PC gaming (*coding languages*) verses console gaming (*point and click*). With R studio the granularity of customization appears to be endless, but more importantly it is a more thoughtful approach to data analysis. With this new perspective, devoting time to statistical computing is not a matter of motivation, but time management.  How I wish this were the case in my undergrad years! I’ve turned to free tools like [Trello](https://trello.com/en), and time blocking my google calendar to ensure I’m optimizing my time with the material.  I’m doing everything I can to put forth my best effort and to keep up with my peers with stronger statistical and computer science backgrounds.  For the assigned readings that means actually typing out the code in the text, additionally I’ve installed a speech reader in my browser to help me focus on the assigned readings *(a game changer*).
 
-However, to quote a line that internet hustle culture Kool-Aid accredits to Michael B Jordan, at the end of the day *“it’s me verses me.”*  Where I started compared to where I am now is the parameter I must hold myself accountable to. I have made my “bruise my ego” line from the second preparations assignment my mantra.  It’s kept me accountable to engage in class, ask questions and face the fear of revealing my deficiencies I’d rather conceal. I’m outside of my element, learning the new rules of academia. This is terrifying and exciting!
+While my project is not quite up to the bar I’ve set for myself, given that I was a true coding beginner with two statistics courses under my belt, I am proud of all that I’ve accomplished this semester. I had to prioritize functionality over form to meet the deadline (this hurts more than you may know), but I have confidence that with more time and skill I can create beautiful visualizations that will outshine my abilities in Tableau and MS Office suite. 
 
-The marketer turned philosopher Ryan Holiday says, *“Belief in yourself is overrated. Generate evidence.”* So on to that part! 
+#### **Here are few artifacts and evidence of my new skillset:**
+
+-	My *[Retrieve, Wrangle, Mutate, Merge](https://rpubs.com/ekoorb03/Guides_Create_Covid_Census)* guide documents my ability to transform data from two separate open source hosts through an API, and retrieve the most current numbers at a click of a button. 
+    -	In this document, I outline how to leverage the ::tidyverse:: and ::tidycensus:: packages to discover the population trends of Michigan counties, and tidy up variables to join the datasets. \
+\    
+      
+-	From there, I’ve provided readers with a summary of findings in the *[Exploring the Data With Summary Stats]( https://rpubs.com/ekoorb03/Guides_Summary_Stats)*
+document. I’ve created three tables in a ::shiny:: app for a county by county comparison that reveals the average counties differences from a socioeconomic and COVID-19 mortality rate perspective. 
+
+    -	A needed improvement is utilizing a function to change variable names between their descriptive (a format lost in CSV form) and the “tidy” version. 
+
+    -	In hindsight, an embedded table on a website would provide for an easier user experience, I hope to make that change in an upcoming update. *[Here](https://073308-brooke.shinyapps.io/MIShiny/)* is the current table.
+    
+
+-	*[Exploring the Data with Scatter Plots]( https://rpubs.com/ekoorb03/Guides_Scatter_Plots)* demonstrates how to utilize the ::plotly:: package to visualize and explore the relationship between two variables. 
+  - I segmented the data into quintiles to reveal at a glance the differences of Michigan county population composition based on COVID-19 mortality, and created my own quintile color pallet for graphic consistency. I love the ability of ::plotly:: to provide labels via hovering over the plot of interest. It allows the enduser to understand more about the variable without cluttering up the graphs.
+  -	Here are the Michigan plots in their current form: 
+      - [COVID-19 Mortality by Public Housing Assistance Rate](https://rpubs.com/ekoorb03/plots_pubassistance)
+  	  - [COVID-19 Mortality by Median Age](https://rpubs.com/ekoorb03/plots_medianage)
+      - [COVID-19 Mortality by Median Income](https://rpubs.com/ekoorb03/plots_income)
+      - [COVID-19 Mortality by Higher Education attainment](https://rpubs.com/ekoorb03/plots_education)
+  -	More sourcing and labeling is needed. 
+
+
+
+-	Lastly, by the final deadline, I will use these quintiles  to showcase my ability to create randomized experiments.
+
+
 
 ###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---

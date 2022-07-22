@@ -1,11 +1,10 @@
 ---
 title: "Exploring the Data With Summary Stats"
 author: "brooke"
-date: "7/12/2022"
+date: "7/23/2022"
 output: html_document
 ---
 
-# Exploring the Data With Summary Stats"
 
 I created  five number summaries for all variables to provide a baseline of the state of Michigan, 
 the data will be exported into a CVS file and transformed into an aesthetically pleasing dynamic table 
