@@ -27,9 +27,9 @@ the more I focused inward.
 - Enrolled in grad school
 - Changed careers
 
-I share these things, not to excuse my ignorance, but enlighten you on why I picked such as well reported topic. 
+I share these things, not to excuse my ignorance, but enlighten you on why I picked such as a well reported topic. 
 
-While I had a peripheral understanding of COVID-19’s devastating impact on the world at large, I was blind to many of state-wide implications. 
+While I had a peripheral understanding of COVID-19’s devastating impact on the world at large, I was blind to many of the state-wide implications. 
 This project is an attempt to rectify my knowledge gap, and inform others in a similar position.
 
 *This is a work in progress, and more analysis is needed to compute the statistical significance the findings. (And I need to add sourcing to the plots!)
@@ -44,7 +44,7 @@ This project is an attempt to rectify my knowledge gap, and inform others in a s
 - Pulls the latest ACS population estimates
 - Calculates the unemployment, education rates, county racial compositions
 - Joins the two datasets together
-- plots the variables to explore the correlation between variables
+- Plots the variables to explore the correlation between variables
 - **to do:** side by side box plots of quintiles by race
 - **to do:** bootstrapping -> can I use the unemployment rate to predict Covid-19 percentile???
 
