@@ -18,7 +18,7 @@
 - ### [Introduction](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Introduction.md#introduction-to-michigan-counties-in-a-pandemic)
 - ### [Findings](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county)
 
-- ### [Summary Tables](https://073308-brooke.shinyapps.io/MIShiny/)**
+- ### [Shiny Summary Tables](https://073308-brooke.shinyapps.io/MIShiny/)
 - ### Interactive Scatterplots
    - [public housing assistance rate](https://rpubs.com/ekoorb03/plots_pubassistance)
    - [median age](https://rpubs.com/ekoorb03/plots_medianage)
