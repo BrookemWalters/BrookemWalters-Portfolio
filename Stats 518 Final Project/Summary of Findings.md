@@ -1,8 +1,7 @@
----
+
 title: "Summary of Findings"
 date: "7/21/2022"
-output: html_document
----
+
 
 
 #### *Draft*  *Draft* *Draft* 
