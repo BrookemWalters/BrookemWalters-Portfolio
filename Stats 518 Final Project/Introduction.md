@@ -13,9 +13,6 @@ My grandmother bought the home next to Betty for a fraction of the cost by the d
 I share this story to disclose my potential bias that may shape my analysis of the 2019 [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/about.html) and the COVID-19 data provided by  [John Hopkins University](https://github.com/CSSEGISandData/COVID-19). Like many, I understand how a zip code profoundly shapes quality of life. 
 As I built the scatter plots and summarized the variables, I did my best to let this notion go and let the data speak for itself.
 
-Throughout this process I learned so much about Michigan! In terms of demographics, Michigan counties vary widely. Admittedly, I was pretty ignorant of my home state.
-**The final summary is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county).**
-
 ### Why this topic?
 The global collaboration to document and report the status of the pandemic over the last few years is truly remarkable. However, the longer the quarantine went on, 
 the more I focused inward. **During the pandemic I:**
@@ -30,7 +27,8 @@ the more I focused inward. **During the pandemic I:**
 These factors do not excuse my ignorance, but perhaps will shed light regarding my topic choice.  
 
 While I had a peripheral understanding of COVID-19’s devastating impact on the world at large, I was blind to many of the state-wide implications. 
-This project is an attempt to rectify my knowledge gap, and inform others in a similar position.
+This project is an attempt to rectify my knowledge gap, and inform others in a similar position. Throughout this process I learned so much about Michigan! In terms of demographics, Michigan counties vary widely. Admittedly, I was pretty ignorant of my home state.
+**The final summary is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county).**
 
 
 ###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
