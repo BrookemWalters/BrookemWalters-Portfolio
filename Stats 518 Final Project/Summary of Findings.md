@@ -28,7 +28,7 @@ My Stat 518 project seeks to understand the relationship between COVID-19 deaths
 
 #### [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources): American Community Survey [(ACS)](https://www.census.gov/programs-surveys/acs/about.html), and the COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
 
-### A few interesting statisics I found in the data:
+### A Few Noteworthy Trends:
 - There is a county in Michigan that is 16% Native American (the median percentage in MI is under 1%).
 - There is a county that is 50% non-white, it’s also the same county that has the highest percentage of households on public assistance and falls into the 4th quintile for Covid-19 deaths per thousand. 
 - The county with the highest percentage of college graduates, also has the highest percentage of Asians, has one of the lowest median ages and ranks third for highest income in Michigan. This county falls in the lowest quintile for Covid-19 deaths.
@@ -40,7 +40,7 @@ By the next deadline, the correlation between county demographic composition and
 I hope my work provides you with a new perspective into Michigan counties, now on the the plots!
 
 
-### Here's the results:
+### Here's the Results:
 *Click on the header for the interactive version*
 
 #### [Table of County Demographics and COVID-19 Mortality](https://073308-brooke.shinyapps.io/MIShiny/)
