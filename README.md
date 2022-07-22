@@ -12,7 +12,7 @@
 ##  **COVID-19 Mortality and Socioeconomic Trends in Michigan by County (Stat 518 Final Project)**
 
 - ### [Introduction](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Introduction.md#introduction-to-michigan-counties-in-a-pandemic)
-- ### [Findings]() *TO DO*
+- ### [Findings](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county) *TO DO*
 
  
 
@@ -39,5 +39,5 @@
 
   - [Make Dynamic Scatterplots](https://rpubs.com/ekoorb03/Guides_Scatter_Plots)
   
-
+### **[Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources)** 
 
