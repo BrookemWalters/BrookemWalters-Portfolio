@@ -12,11 +12,11 @@ date: "7/21/2022"
 
 
 My Stat 518 project seeks to understand the relationship between COVID-19 deaths and socioeconomic variables in Michigan counties. 
-\
+
 
 The global collaboration to document and report the status of the pandemic over the last few years is truly remarkable. However, the longer the quarantine went on, 
 the more focused inward. 
-\
+
 
 #### **During the pandemic I:**
 - Returned from a year abroad
@@ -33,8 +33,8 @@ While I had a peripheral understanding of COVID-19’s devastating impact on the
 This project is an attempt to rectify my knowledge gap, and inform others in a similar position.
 
 *This is a work in progress, and more analysis is needed to compute the statistical significance the findings. (And I need to add sourcing to the plots!)
-\
-\
+
+
 
 ### **Project Description:**
 **I’ve written a script that automatically:**
@@ -50,8 +50,7 @@ This project is an attempt to rectify my knowledge gap, and inform others in a s
 
 
 #### [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources)
-##### [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/about.html)
-##### COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
+##### [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/about.html), and the COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
 
 ### **Here's what I learned:**
 
@@ -64,27 +63,17 @@ This project is an attempt to rectify my knowledge gap, and inform others in a s
 
 #### [Table of County Demographics and COVID-19 Mortality](https://rpubs.com/ekoorb03/Guides_Summary_Stats)
 [insert static image]
-\
-- *interesting finding* 
-\
+- *interesting finding*
 \
 \
-\
-
 #### ["COVID-19 Mortality (quintiles) by Median Age in Michigan Counties"](https://rpubs.com/ekoorb03/plots_medianage)
 ![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/age_sp.jpeg?raw=true)
 - *interesting finding* 
 \
 \
-\
-\
-
-
 #### ["COVID-19 Mortality (quintiles) by % of HH on Public Assistance in Michigan Counties"](https://rpubs.com/ekoorb03/plots_pubassistance)
 ![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/assist_sp.jpeg?raw=true)
 - *interesting finding* 
-\
-\
 \
 \
 
@@ -93,24 +82,17 @@ This project is an attempt to rectify my knowledge gap, and inform others in a s
 - *interesting finding* 
 \
 \
-\
-\
 
 
 #### ["COVID-19 Mortality (quintiles) by Median income in Michigan Counties"](https://rpubs.com/ekoorb03/plots_pubassistance)
 ![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/income_sp.jpeg?raw=true)
-*interesting finding* \
+*interesting finding* 
 \
 \
-\
-\
-
 
 #### ["COVID-19 Mortality (quintiles) by % of Adults 25+ with 4 year degrees or higher in Michigan Counties"](https://rpubs.com/ekoorb03/plots_pubassistance)
  ![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/ed_sp.jpeg?raw=true) 
 - *interesting finding* 
-\
-\
 \
 \
 
