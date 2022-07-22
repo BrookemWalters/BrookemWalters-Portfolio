@@ -30,13 +30,13 @@ document. I’ve created three tables in a ::shiny:: app for a county by county 
         - [COVID-19 Mortality by Public Housing Assistance Rate](https://rpubs.com/ekoorb03/plots_pubassistance)
   	    - [COVID-19 Mortality by Median Age](https://rpubs.com/ekoorb03/plots_medianage)
         - [COVID-19 Mortality by Median Income](https://rpubs.com/ekoorb03/plots_income)
-        - [COVID-19 Mortality by Higher Education attainment](https://rpubs.com/ekoorb03/plots_education) \
+        - [COVID-19 Mortality by Higher Education attainment](https://rpubs.com/ekoorb03/plots_education) 
     
-    -	More sourcing and labeling is needed. \
+    -	More sourcing and labeling is needed. 
 
 
--	Lastly, by the final deadline, I will use these quintiles  to showcase my ability to create randomized experiments. \
+-	Lastly, by the final deadline, I will use these quintiles  to showcase my ability to create randomized experiments. 
 
-\
 
-###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
+
+###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/README.md)---
