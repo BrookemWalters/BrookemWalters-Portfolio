@@ -4,7 +4,7 @@ Throughout this portfolio, I’ve illustrated that I’m on the path to earn an 
  I understand the basics and have foundational statistical computing skills.
 
 **Here are my artifacts and skills set evidence:**
-\
+
 
 #### **Import, manage, and clean data** & **Write clear, efficient, and well-documented R programs**
 -	My *[Retrieve, Wrangle, Mutate, Merge](https://rpubs.com/ekoorb03/Guides_Create_Covid_Census)* guide documents my ability to transform data from two separate open source hosts through an API, and retrieve the most current numbers at a click of a button. 
@@ -28,7 +28,7 @@ document. I’ve created three tables in a ::shiny:: app for a county by county 
   	    - [COVID-19 Mortality by Median Age](https://rpubs.com/ekoorb03/plots_medianage)
         - [COVID-19 Mortality by Median Income](https://rpubs.com/ekoorb03/plots_income)
         - [COVID-19 Mortality by Higher Education attainment](https://rpubs.com/ekoorb03/plots_education) \
-      \    
+          
     -	More sourcing and labeling is needed. 
     
 #### **Write R programs for simulations from probability models and randomization-based experiments**    
