@@ -9,7 +9,7 @@ Upon moving north, Nana had the good fortune of meeting Betty, who was secretly 
 
 My grandmother bought the home next to Betty for a fraction of the cost by the distraught homeowners. By the time my father was born, the community shifted into a black middle-class West Michigan neighborhood. In the late 80's a large public housing project was proposed and constructed next to my grandmother's home, and the community evolved again. Nana still lives here today. 
 
-### About This Project 
+### Acknowledging Bias
 I share this story to disclose my potential bias that may shape my analysis of the 2019 [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/about.html) and the Covid-19 data provided by  [John Hopkins University](https://github.com/CSSEGISandData/COVID-19). Like many, I understand how a zip code profoundly shapes quality of life. 
 As I built the scatter plots and summarized the variables, I did my best to let this notion go and let the data speak for itself.
 
@@ -27,7 +27,7 @@ the more I focused inward. **During the pandemic I:**
 - Enrolled in grad school
 - Changed careers
 
-I share these things, not to excuse my ignorance, but enlighten you on why I chose a widely reported topic. 
+These factors do not excuse my ignorance, but perhaps will shed light regarding my topic choice.  
 
 While I had a peripheral understanding of COVID-19’s devastating impact on the world at large, I was blind to many of the state-wide implications. 
 This project is an attempt to rectify my knowledge gap, and inform others in a similar position.
