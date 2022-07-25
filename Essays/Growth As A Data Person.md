@@ -14,6 +14,7 @@ While my project is not quite up to the bar I’ve set for myself, given that I 
 Earlier this semester, I created tables and box plots comparing weight by gender with the ::starwars:: dataset. Compare this to where I am now, nearing the end of the semester, I connected to two separate open-source reports and plotted several dimensions in  interactive scatter plots and tables. 
 While there is beauty in the simplicity of the early visualizations, the coding skills needed to create the dynamic charts are more advanced. 
 
+*To do: Three supporting points on the skills needed for the advanced plots*
 
 #### **Mid-Semester Work**
 
