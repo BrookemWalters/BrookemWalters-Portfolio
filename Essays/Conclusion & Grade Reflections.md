@@ -6,7 +6,7 @@ Throughout this portfolio, I’ve illustrated that I’m on the path to earn an 
 **Here are my artifacts and skills set evidence:**
 
 
-#### Import, manage, and clean data & write clear, efficient, and well-documented R programs**
+#### Import, manage, and clean data & write clear, efficient, and well-documented R programs
 -	My *[Retrieve, Wrangle, Mutate, Merge](https://rpubs.com/ekoorb03/Guides_Create_Covid_Census)* guide documents my ability to transform data from two separate open source hosts through an API, and retrieve the most current numbers at a click of a button. 
     -	In this document, I outline how to leverage the ::tidyverse:: and ::tidycensus:: packages to discover the population trends of Michigan counties, and tidy up variables to join the datasets. 
 
