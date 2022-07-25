@@ -19,7 +19,7 @@ document. I’ve created three tables in a ::shiny:: app for a county by county 
     -	In hindsight, an embedded table on a website would provide for an easier user experience, I hope to make that change in an upcoming update. **[Here](https://073308-brooke.shinyapps.io/MIShiny/)** is the current table artifact.
     
 
--	*[Exploring the Data with Scatter Plots]( https://rpubs.com/ekoorb03/Guides_Scatter_Plots)* demonstrates how to utilize the ::plotly:: package to visualize and explore the relationship between two variables. 
+-	*[Exploring the Data with Scatter Plots]( https://rpubs.com/ekoorb03/Guides_Scatter_Plots)* demonstrates how to utilize the ::plotly:: package to visualize and explore the relationship between two variables. (*note: this document will be cleaned up so the code chunks are more easily read)
 
     - I segmented the data into quintiles to reveal at a glance the differences of Michigan county population composition based on COVID-19 mortality, and created my own quintile color palette for graphic consistency. I love the ability of ::plotly:: to provide labels via hovering over the plot of interest. It allows the end user to understand more about the variable without cluttering up the graphs.
   
