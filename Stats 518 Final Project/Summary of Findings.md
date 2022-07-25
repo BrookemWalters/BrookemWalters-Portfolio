@@ -13,7 +13,7 @@ My Stat 518 project seeks to understand the relationship between COVID-19 deaths
 ***Note:***  *This is a work in progress, and more analysis is needed to compute the statistical significance of the findings. (And I need to add sourcing to the plots!)*
 
 ### **Project Description:**
-**I’ve written a script that automatically:**
+**My script automates the following:**
 
 - Pulls and aggregates the most recent cumulative count of COVID-19 deaths for Michigan by county 
 - Calculates death rate per thousand, and breaks that group into 5 risk segments (quintiles), 1 being the lowest rate of COVID-19 deaths
