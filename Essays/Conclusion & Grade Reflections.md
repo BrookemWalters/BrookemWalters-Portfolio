@@ -1,7 +1,7 @@
 # Conclusion & Grade Reflections
 
 Throughout this portfolio, I’ve illustrated that I’m on the path to earn an A in this course. 
- I understand the basics and have foundational statistical computing skills.
+ I can write code that meets the course objects, I have foundational statistical computing skills, and understand how to put it all together in a coherant manner.
 
 **Here are my artifacts and skills set evidence:**
 
