@@ -1,6 +1,6 @@
 ## Introduction to COVID-19 Michigan Mortality & Socioeconomic Trends
 
-At the age of 16, my grandmother “Nana” left her parents and ten siblings behind in pursuit of a better life in Grand Rapids, Michigan. Her parents were sharecroppers, and if you know anything about 1950’s Mississippi – life wasn’t exactly ideal for a young black woman. 
+At the age of 16, my grandmother “Nana” left her parents and nine siblings behind in pursuit of a better life in Grand Rapids, Michigan. Her parents were sharecroppers, and if you know anything about 1950’s Mississippi – life wasn’t exactly ideal for a young black woman. 
 
 Upon moving north, Nana had the good fortune of meeting Betty, who was secretly dating a well-to-do judge. Betty’s boyfriend bought her a house in a white middle-class neighborhood… This was a HUGE scandal. You see, blacks were not “*allowed*” to own property in that part of town. Betty’s boyfriend found a loophole. According to my grandmother, the neighbors were completely beside themselves, and promptly vacated the area. 
 
