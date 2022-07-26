@@ -104,8 +104,8 @@ The larger the bubble, the more deaths that county experienced. The higher the q
 
 
 ---
-**Back to the [bias disclosure and intro](https://github.com/BrookemWalters/BrookemWalters-Portfolio/edit/main/Stats%20518%20Final%20Project/Introduction.md).**
-**Jump the [source code](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data).**
+**Back to the [bias disclosure and intro](https://github.com/BrookemWalters/BrookemWalters-Portfolio/edit/main/Stats%20518%20Final%20Project/Introduction.md).** \
+**Jump to the [source code](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data).**
 
 
 ###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
