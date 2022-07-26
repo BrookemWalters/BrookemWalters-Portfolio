@@ -31,6 +31,8 @@ This project is an attempt to rectify my knowledge gap, and inform others in a s
 
 
 Throughout this process I learned so much about Michigan! In terms of demographics, Michigan counties vary widely. Admittedly, I was pretty ignorant of my home state.
+I hope my work provides you with a new perspective into Michigan counties.
+
 **The final summary is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county).**
 
 
