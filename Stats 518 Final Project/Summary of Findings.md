@@ -39,7 +39,7 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
     -	*Does a county skew young or old?* 
     -	*What’s the average unemployment rate in Michigan?*
     -	*What is the highest county [public assistance rate](https://www.census.gov/topics/income-poverty/public-assistance/about.html)?* 
-- **All the Michigan County Data:** [*a working title*]
+- **All the Michigan County Data:**
   -	Here you will find a list of all US counties and their key socioeconomic figures side by side.
   -	You can search, filter, and sort my entire county-COVID dataset
 - **COVID-19 Mortality Quintile (Q1 through Q5):**
@@ -66,14 +66,14 @@ o	Kalamazoo
 
 ---
 ## Scatter Plots
-Hover of the points on the graph to learn more about each county. 
-The larger the bubble, the more deaths that county experience. The higher the quintile, the more death the county experienced per 1000.
-The interactive graphs show how the relationship between one socioeconomic variable and the COVID-19 mortality rate. 
+Hover over the points on the graph to learn more about each county. 
+The larger the bubble, the more deaths that county experienced. The higher the quintile, the more death the county experienced per 1000.
+The interactive graphs show the relationship between one socioeconomic variable and the COVID-19 mortality rate. 
 
 #### [** Click ME [2] **](https://rpubs.com/ekoorb03/plots_medianage) ["COVID-19 Mortality (quintiles) by Median Age in Michigan Counties"]
 ![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/age_sp.jpeg?raw=true)
 - *interesting finding* 
--
+
 ---
 
 #### [** Click ME [3] **](https://rpubs.com/ekoorb03/plots_pubassistance)"COVID-19 Mortality (quintiles) by % of HH on Public Assistance in Michigan Counties"
