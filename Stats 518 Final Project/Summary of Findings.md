@@ -47,7 +47,7 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
 #### The Findings:
 With an average of 2.4 deaths per thousand, counties in the first quintile (Q1), look radically different than the other end of the spectrum:
 
-Here are a few traits of Q1 counties:
+Here are a few traits of the average Q1 county:
 - medium sized populations
 - younger residents
 - highly educated residents
