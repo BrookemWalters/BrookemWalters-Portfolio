@@ -27,7 +27,10 @@ the more I focused inward. **During the pandemic I:**
 These factors do not excuse my ignorance, but perhaps will shed light regarding my topic choice.  
 
 While I had a peripheral understanding of COVID-19’s devastating impact on the world at large, I was blind to many of the state-wide implications. 
-This project is an attempt to rectify my knowledge gap, and inform others in a similar position. Throughout this process I learned so much about Michigan! In terms of demographics, Michigan counties vary widely. Admittedly, I was pretty ignorant of my home state.
+This project is an attempt to rectify my knowledge gap, and inform others in a similar position.
+
+
+Throughout this process I learned so much about Michigan! In terms of demographics, Michigan counties vary widely. Admittedly, I was pretty ignorant of my home state.
 **The final summary is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county).**
 
 
