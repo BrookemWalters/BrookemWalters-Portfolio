@@ -40,7 +40,7 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
     -	*What’s the average unemployment rate in Michigan?*
     -	*What is the highest county [public assistance rate](https://www.census.gov/topics/income-poverty/public-assistance/about.html)?* 
 - **All the Michigan County Data:**
-  -	Here you will find a list of all US counties and their key socioeconomic figures side by side
+  -	Here you will find a list of all MI counties and their key socioeconomic figures side by side
   -	You can search, filter, and sort my entire county-COVID dataset
 - **COVID-19 Mortality Quintile (Q1 through Q5):**
    - This final table allows you to compare the socioeconomic differences between a Q1 county, and a county with the lowest COVID-19 mortality rate, and the highest rate (Q5)
