@@ -35,5 +35,7 @@ I hope my work provides you with a new perspective into Michigan counties.
 
 **The final summary is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county).**
 
+**The source code is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data)
+
 
 ###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
