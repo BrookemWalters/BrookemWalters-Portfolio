@@ -7,6 +7,9 @@ July 23, 2022
 My Stat 518 project seeks to explore the relationship between COVID-19 deaths and socioeconomic variables in Michigan counties. \
 ***Note:***  *This is a work in progress, and more analysis is needed to compute the statistical significance of the findings. (And I need to add sourcing to the plots!)*
 
+**The source code is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data).**
+
+
 ## **Project Description:**
 **My script automates the following:**
 
@@ -101,5 +104,8 @@ The larger the bubble, the more deaths that county experienced. The higher the q
 
 
 ---
+**Back to the [bias disclosure and intro](https://github.com/BrookemWalters/BrookemWalters-Portfolio/edit/main/Stats%20518%20Final%20Project/Introduction.md).**
+**The source code is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data).**
+
 
 ###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
