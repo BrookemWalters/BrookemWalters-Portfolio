@@ -57,7 +57,7 @@ quintiles_cc <- read.csv("covid_mortality_summary.csv") %>%
 # Define UI for application that draws a histogram
 ui <- 
     navbarPage(
-        "Brooke's Tables",
+        "Michigan County Population Data",
         tabPanel(
             "Summary Statisics",
             fluidPage(
