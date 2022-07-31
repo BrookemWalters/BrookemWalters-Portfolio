@@ -18,7 +18,7 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
 - **Compiles** the unemployment rate, education rate, household public assistance utilization rate,  median income, median age, and county racial compositions
 - **Joins** the two datasets together via county
 - **Reveals** the summary statistics of the numeric variables
-- **Vizualizes** the data into tables and scatter plots 
+- **Vizualizes** the data into [tables](https://github.com/BrookemWalters/BrookemWalters-Portfolio/edit/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#the-tables-explained) and [scatter plots](https://github.com/BrookemWalters/BrookemWalters-Portfolio/edit/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#scatter-plots) 
 
 
 *As of July 30th 2022, this data reflects COVID-19 deaths as of July 28th 2022*
@@ -26,7 +26,7 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
 ---
 ## How To Use
 **There are {5} sites to visit:** 
-*follow the **{ Click ME }** link to explore the data* \
+*follow the **{ Click ME }** link or image to explore the data* \
 ![image](https://user-images.githubusercontent.com/99227900/180902925-2471672c-c495-4022-b7fb-f70fd0a307e9.png)
 
 
