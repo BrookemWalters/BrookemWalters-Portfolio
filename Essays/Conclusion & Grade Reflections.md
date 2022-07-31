@@ -1,6 +1,6 @@
 # Conclusion & Grade Reflections
 
-Throughout this portfolio, I’ve illustrated that I’m on the path to earn an A in this course. 
+Throughout my portfolio, I’ve illustrated that I’m on the path to earn an A in this course. 
  I can write code that meets the course objectives, I have foundational statistical computing skills, and I can present the results in a organized and dynamic manner.
 
 **Here are my artifacts and skills set evidence:**
