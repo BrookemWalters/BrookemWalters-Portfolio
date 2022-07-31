@@ -10,12 +10,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-# Exploring the Data With Scatter Plots"
-
-I created four dynamic scatter plot tables that show the county by county relationships between  covid-19 mortality  and :
-- [public housing assistance rate](https://rpubs.com/ekoorb03/plots_pubassistance)
-- [median age](https://rpubs.com/ekoorb03/plots_medianage)
-- [median income](https://rpubs.com/ekoorb03/plots_income)
+I created four dynamic scatter plot tables that show the county by county relationships between COVID-19 mortality and : \
+- [public housing assistance rate](https://rpubs.com/ekoorb03/plots_pubassistance) \
+- [median age](https://rpubs.com/ekoorb03/plots_medianage) \
+- [median income](https://rpubs.com/ekoorb03/plots_income) \
 - [higher education attainment](https://rpubs.com/ekoorb03/plots_education)
 
 
@@ -23,31 +21,33 @@ I created four dynamic scatter plot tables that show the county by county relati
 
 The script below:
 
-1) Divides the data into quintiles by covid-19 morbidity rate per 1,000 population
+1) Divides the data into quintiles by covid-19 mortalityrate per 1,000 population
 2) Exports the quintile into a csv file for the [shiny table](https://073308-brooke.shinyapps.io/MIShiny/)
 2) Updates variables names into a descriptive format
-3) Create 4 interactive scatter plots of Michigan counties
+3) Creates 4 interactive scatter plots of Michigan counties, with customized colors, themes, and fonts 
 4) Export plots for as jpegs in the portfolio repository 
 
-The final analysis is [here]()
+The final analysis is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality--socioeconomic-trends-in-michigan-by-county)
 
 
 
-## Step 1
- - Load plotly and tidyverse
+
+## Step 1.1
+ - Load plotly and tidyverse, ggtheme, and fonts
 #install package if needed
-
 ```{r load ploty}
-library(plotly)
-library(tidyverse)
+library(plotly) #make it interactive
+library(tidyverse) # create the visualizations
+library(ggthemes) # preset plot aesthetics
 ```
 
 
-## Step 2
-- create quintiles for an added layer the scatter plots
 
+
+## Step 2.1
+- create quintiles for an added layer for the scatter plots
 ```{r create quintiles}
-covid_quintile <- covid_census %>% 
+covid_quintile <- read.csv("~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/data/covid_census.csv") %>% 
   select(population19E, householdsE, median_ageE, median_incomeE, bach_degree_plus_a25E, unemployment_rate, public_assist_rate, percent_asian, percent_black, percent_native, percent_pacific_islander, percent_white, percent_hispanic, County, Total_Deaths, Deaths_Per_Pop_Thousand) %>% 
   mutate(covid_mortality_quintile = ntile(Deaths_Per_Pop_Thousand,5))
 ```
@@ -55,11 +55,18 @@ covid_quintile <- covid_census %>%
 1 = lowest Covid deaths per 1,000
 5 = highest Covid deaths per 1,000
 
+## Step 2.2
+- Create a line of code to generate citations
+```{r  generate citations}
+us_cd_deaths <- read_csv("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv")
+source_two_date <- rev(names(us_cd_deaths))[1]
+print_sources <-  print(paste ("Sources: 1) American Community Survey (ACS), 2016-2020 5-Year estimates, 2) JHU CSSE COVID-19 Data Repository as of", source_two_date)) 
+```
+
+
 
 ## Step 3
 - Convert the quintile numbers into factors, so the variable can have discrete formatting in the plots
-
-
 ```{r convert to factors}
 covid_quintile$covid_mortality_quintile <-  covid_quintile$covid_mortality_quintile %>%  as.factor 
 ```
@@ -67,15 +74,12 @@ covid_quintile$covid_mortality_quintile <-  covid_quintile$covid_mortality_quint
 
 ## Step 4
 - Convert data into tibble for ease of wrangling
-
 ```{r tibble}
 covid_quintile <- tibble(covid_quintile)
 ```
 
 ## Step 5 
 - Export this data for another project, I'll update the names next and I don't want this to interfere with my calculations
-
-
 ```{r write CSV for bootstrapping}
 write.csv(covid_quintile,"~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Bootstrapping/covid_census_bs.csv")
 ```
@@ -85,7 +89,6 @@ write.csv(covid_quintile,"~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Pro
 
 ## Step 6
 - Update variable with descriptive names, the other set of descriptive names caused an error if used before this point due to the symbols used
-
 ```{r update names}
 covid_quintile_chart <-  covid_quintile %>% 
   rename( 
@@ -116,17 +119,20 @@ mortal_palette <-  c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")
 
 
 ## Steps 8-12
-- create a scatter plot showing the  relationship between Covid Deaths per 1000, Total Covid Death, Quintiles, 
+- create a scatter plot showing the  relationship between COVID-19 Deaths per 1000, Total COVID-19 Death, Quintiles, 
 - update the x axis with the desired variable, and update the title to reflect the changes
-
-
 ```{r housing assistance plots}
 assist_sp <- covid_quintile_chart %>% 
   ggplot( aes(x = `% of HH on Public Assist.`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=covid_mortality_quintile, text=County)) +
   geom_point(alpha = 6/10) +
   scale_size_continuous(range = c(2, 15)) +
-  labs(title = "Michigan Covid Mortality (quintiles) by % of HHs on Assistance", color = "Quintile", size = NULL) +
-  scale_color_manual(values = mortal_palette) 
+  labs(title = "COVID-19 Mortality Rate by Percent of Households on Assistance",
+       subtitle = "Michigan Counties, deaths per 1000",
+       caption = print_sources,
+       color = "Quintile", size = NULL) +
+  scale_color_manual(values = mortal_palette) +
+  theme_fivethirtyeight() +
+  theme(axis.title = element_text())
 
 #save the static plot to the "plots" folder
 jpeg(filename = "~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/Plots/assist_sp.jpeg",
@@ -199,7 +205,7 @@ ia_income_sp
 
 
 
-##### [Part Four: Making it Shiny]()
+##### [Part Four: Making it Shiny](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Tables_Shiny/MIShiny/app.R)
 ###### ---[Back to Table of Contents](https://github.com/BrookemWalters/BrookemWalters-Portfolio#table-of-contents-brooke-walters-portfolio)---
 
 

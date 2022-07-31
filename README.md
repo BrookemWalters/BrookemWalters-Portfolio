@@ -26,14 +26,14 @@
    - [higher education attainment](https://rpubs.com/ekoorb03/plots_education)
 
 
-### **Bootstrapping the Data** *to do*
+### [Bootstrapping the Data](https://rpubs.com/ekoorb03/Guides_Bootstrapping)
 
 ### **Guides to the Vizualizations**
   - [Create Retrieve, Wrangle, Mutate, Merge](https://rpubs.com/ekoorb03/Guides_Create_Covid_Census)
   
   - [Create Summary Stats Table](http://rpubs.com/ekoorb03/Guides_Summary_Stats)
 
-  - [Make it a Shiny Table]() *to explain*
+  - [Make it a Shiny Table](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Tables_Shiny/MIShiny/app.R) 
 
   - [Make Dynamic Scatterplots](https://rpubs.com/ekoorb03/Guides_Scatter_Plots)
   

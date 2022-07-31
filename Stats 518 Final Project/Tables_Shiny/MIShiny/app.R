@@ -84,7 +84,8 @@ server <- function(input, output, session){
     
     
     output$sum_table_cc<- renderDT({
-        sum_table_cc %>% select(-1)})
+        sum_table_cc %>% 
+            select(-1)})
     
     output$entire_table_cc<- renderDT({
         entire_table_cc %>% select(-1) })

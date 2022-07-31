@@ -15,7 +15,7 @@ output: html_document
 - Calculates county covid deaths per 1000 
 - Pulls the most recent ACS demographic estimates (2019 is the most current release as of today) 
 - Calculates, county rate of unemployment, public assistance usage, and racial compositions 
-- Merges the [JHU CSSE COVID-19](https://github.com/CSSEGISandData/COVID-19) morbidity data with the [American Community Survey (ACS)](https://www.census.gov/data/developers/data-sets/acs-5year.html) estimates into a CSV file for export
+- Merges the [JHU CSSE COVID-19](https://github.com/CSSEGISandData/COVID-19) morbidity data with the [American Community Survey (ACS) 2016 -2020 5 Year estimates](https://www.census.gov/data/developers/data-sets/acs-5year.html) estimates into a CSV file for export
 
 [Here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Introduction.md#introduction-to-michigan-counties-in-a-pandemic) explains the inspiration and the potential bias I bring to my data analysis. 
 
@@ -87,7 +87,7 @@ names(mi_cd_deaths)[7] <- "Total_Deaths"
 
 
 ### Step 1.5: 
- - create a covid death rate per thousand (mortality rate), around round to the nearest hundredths place
+ - create a covid death rate per thousand (mortality rate), round to the nearest hundredths place
 
 ```{r update total deaths to deathrate}
 mi_cd_deaths <- mutate(mi_cd_deaths, Deaths_Per_Pop_Thousand =  (Total_Deaths / (Population / 1000 )))
@@ -197,7 +197,7 @@ ac_race_factors <- get_acs(
 ```
 
 
-### 2.7
+### Step 2.7
  - create population rates by racial composition
  - round the values for consistency 
  - **Note *GEOID* will be used to join the two sets of ACS variables**

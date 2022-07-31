@@ -1,5 +1,5 @@
 ---
-title: "covid_bootstrapping"
+title: "create the quintile table"
 author: "brooke"
 date: "7/20/2022"
 output: html_document

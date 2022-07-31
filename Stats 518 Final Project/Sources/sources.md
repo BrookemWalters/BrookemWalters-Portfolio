@@ -1,9 +1,8 @@
 # Sources
 
 ## Data Sources: 
-- [American Community Survey (ACS)](https://www.census.gov/programs-surveys/acs/about.html)
+- [American Community Survey (ACS), 2016-2020 ACS 5-Year estimates](https://www.census.gov/programs-surveys/acs/about.html)
 - COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University
-
 
 
 ### Guides Used
@@ -19,3 +18,7 @@
 
 
 - [Step-by-Step Data Visualization Guideline with Plotly in R](https://medium.com/swlh/step-by-step-data-visualization-guideline-with-plotly-in-r-fbd212640de2) by Yigit Erol
+
+
+- [Bootstrap Hypothesis Testing in R](https://www.youtube.com/watch?v=Zet-qmEEfCU&ab_channel=MarinStatsLectures-RProgramming%26Statistics) by Mike Marin
+

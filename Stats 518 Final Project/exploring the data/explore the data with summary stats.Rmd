@@ -5,7 +5,6 @@ date: "7/12/2022"
 output: html_document
 ---
 
-# Exploring the Data With Summary Stats"
 
 I created  five number summaries for all variables to provide a baseline of the state of Michigan, 
 the data will be exported into a CVS file and transformed into an aesthetically pleasing dynamic table 
@@ -33,11 +32,11 @@ library(tidyverse)
 
 ### Step 2
 - Rename variables with descriptive titles, allowing for a cleaner looking final table
-- Remove the duplicate population variable from the JHU CSSE COVID-19
+- Select the numerical variables I can summarize
 
 ```{r rename variables}
-table_covid_census <-  covid_census %>% 
-  select( -Population) %>% 
+table_covid_census <-  read.csv("~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/data/covid_census.csv") %>% 
+  select(County, population19E, householdsE, median_ageE,median_incomeE, bach_degree_plus_a25E, public_assist_rate, unemployment_rate, percent_asian, percent_asian, percent_black,percent_native, percent_pacific_islander, percent_white, percent_hispanic,Total_Deaths, Deaths_Per_Pop_Thousand) %>% 
   rename( 
     Population = "population19E",
     Households = "householdsE",
@@ -55,49 +54,42 @@ table_covid_census <-  covid_census %>%
     `Total Covid Deaths` = "Total_Deaths",
     `Covid Deaths Per Thousand` = "Deaths_Per_Pop_Thousand"
   )
-table_covid_census
+glimpse(table_covid_census)
 ```
-
 
 ### Step 3
+
+```{r remove county}
+# I want county for another project, but I'll remove it here so I can summarize the numerical data
+sum_table_covid_census <- select(table_covid_census, -County)
+```
+
+
 - Calculate a five number summary of all variable using the "describe" function from the ::pysch:: package
   - **note* the ::pysch:: has a major conflict the ::ggplot2:: -to avoid bugs later, it's best to run it as part of the function
-  - because the data includes non-numerical values, a warning message is generated but all is well
 
 ```{r five number sum it all}
-sum_table_covid_census <- psych::describe(table_covid_census, fast = TRUE ) %>% 
+sum_table_covid_census <- psych::describe(sum_table_covid_census, fast = TRUE ) %>% 
   mutate_if(is.numeric, round,1)
-sum_table_covid_census
+glimpse(sum_table_covid_census)
 ```
+
+
+
+
 
 ### Step 4
-- Remove non-numerical variables from the rows, and error message generates for non-numerical values but all is well!
-
-```{r remove the nonsense rows}
-sum_table_covid_census <- sum_table_covid_census[-c( 1,2, 16, 17,18,19,20),]
-sum_table_covid_census
-```
-
-### Step 5
 - Change the first column to the variable names, for table readability 
 - All of the variables are for all 83 counties, removing "n" column
 
-
-
 ```{r prepare data to be vizualized in a table}
-sum_table_covid_census <- tibble::rownames_to_column(sum_table_covid_census, "VALUE") %>%
-  select(-vars , -n)
-sum_table_covid_census
+sum_table_covid_census <- tibble::rownames_to_column(sum_table_covid_census, "socioeconomic factor")
+
+sum_table_covid_census <-   select(sum_table_covid_census, -vars , -n)
 ```
 
 
 ### Step 5
-- remove non-numerical variables from the rows, and error message generates for non-numerical values but all is well!
-
-
-
-
-### Step 6
 - Write an CSV file for use import into the dynamic summary table
 
 ```{r write csv sum stat file}
@@ -107,7 +99,7 @@ write.csv(sum_table_covid_census,"~/STA 518/BrookemWalters-Portfolio/Stats 518 F
 
 
 ### Step 7 
- - Clean up the full data set from Step 2 for use in the dynamic table
+ - Clean up the full data set from Step 2 for use in the shiny table
 
 
 ```{r table_covid_census}
