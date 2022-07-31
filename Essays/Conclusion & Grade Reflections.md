@@ -25,15 +25,15 @@ document. I’ve created three tables in a ::shiny:: app for a county by county 
   
      -	Here are the Michigan plots in their current form: 
         - [COVID-19 Mortality by Public Housing Assistance Rate](https://rpubs.com/ekoorb03/plots_pubassistance)
-  	    - [COVID-19 Mortality by Median Age](https://rpubs.com/ekoorb03/plots_medianage)
+        - [COVID-19 Mortality by Median Age](https://rpubs.com/ekoorb03/plots_medianage)
         - [COVID-19 Mortality by Median Income](https://rpubs.com/ekoorb03/plots_income)
         - [COVID-19 Mortality by Higher Education attainment](https://rpubs.com/ekoorb03/plots_education) 
           
     -	More sourcing and labeling is needed. 
     
 #### **Write R programs for simulations from probability models and randomization-based experiments**    
--	Lastly, by the final deadline, I will use these quintiles  to showcase my ability to create randomized experiments. 
-
+-	Lastly, I used these quintiles to showcase my ability to create [randomized experiments](https://rpubs.com/ekoorb03/Guides_Bootstrapping). I compared the unemployment rates of the counties in the top and and lowest quintiles for COVID-19 mortality rates. Calculated a test statisic using the difference in means, found the p-value of the bootstrapped samples and concluded 
+at the 5% significance level, there is sufficient evidence to support that the mean unemployment rate differs betweem Q1 amd Q5 COVID-19 Mortality rates.”
 
 One last note on my growth, I've started receiving complaints about the clanking coming out of my office... all from the sound of typing. My study hours haven't changed, but it is time to buy a quieter keyboard for coding sessions.
  I'll take that as a complement, and a mark of gained proficiency.  
