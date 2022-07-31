@@ -30,8 +30,9 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
 ![image](https://user-images.githubusercontent.com/99227900/180902925-2471672c-c495-4022-b7fb-f70fd0a307e9.png)
 
 
-
 #### [{ Click ME 1 }](https://073308-brooke.shinyapps.io/MIShiny/) Table of County Demographics and COVID-19 Mortality
+[![screenshot](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/Table%20Screenshot.jpg?raw=true)](https://073308-brooke.shinyapps.io/MIShiny/)
+
 #### The Tables Explained: 
 - **Summary Statistics:** Use this as a point of reference when considering *"How does this county compare to the rest?"*
   - For example:
