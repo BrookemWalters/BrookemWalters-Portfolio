@@ -3,7 +3,7 @@ Brooke Walters \
 July 23, 2022
 
 My Stat 518 project seeks to explore the relationship between COVID-19 deaths and socioeconomic variables in Michigan counties. \
-***Note:***  *This is a work in progress, and more analysis is needed to compute the statistical significance of the findings.
+***Note:***  *This is a work in progress, and more analysis is needed to compute the statistical significance of the findings.*
 
 **The source code is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data).**
 
