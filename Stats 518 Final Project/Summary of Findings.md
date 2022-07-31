@@ -1,12 +1,13 @@
 # COVID-19 Mortality & Socioeconomic Trends in Michigan, by County
+### *Exploring the relationship between COVID-19 deaths and socioeconomic factors in Michigan counties* 
 Brooke Walters \
-July 23, 2022
+July 23, 2022 \
+Stats 518
 
-My Stat 518 project seeks to explore the relationship between COVID-19 deaths and socioeconomic variables in Michigan counties. \
-***Note:***  *This is a work in progress, and more analysis is needed to compute the statistical significance of the findings.*
 
-**The source code is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data).**
-
+![Listen to sufjan stevens](https://user-images.githubusercontent.com/99227900/182040008-7c68542b-0c5a-4456-8456-813226ed26e5.png)
+**The source code is [here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data).** \
+***Note:***  *This is a work in progress, and more analysis is needed to compute the statistical significance of the findings.* 
 
 ## **Project Description:**
 **My script automates the following:**
@@ -25,12 +26,11 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
 #### [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources): *American Community Survey [(ACS)](https://www.census.gov/programs-surveys/acs/about.html) 2016 - 2020 Estimates, and the COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University* 
 ---
 ## How To Use
-**There are {5} sites to visit:** 
-*follow the **{ Click ME }** link or image to explore the data* \
-![image](https://user-images.githubusercontent.com/99227900/180902925-2471672c-c495-4022-b7fb-f70fd0a307e9.png)
+**There are {five} sites to visit:** 
+*follow the **{Click ME}** link or image to explore the data* \
 
 
-#### [{ Click ME 1 }](https://073308-brooke.shinyapps.io/MIShiny/) Table of County Demographics and COVID-19 Mortality
+#### Table of County Demographics and COVID-19 Mortality [{Click ME}](https://073308-brooke.shinyapps.io/MIShiny/) 
 [![screenshot](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/Table%20Screenshot.jpg?raw=true)](https://073308-brooke.shinyapps.io/MIShiny/)
 
 #### The Tables Explained: 
@@ -70,25 +70,25 @@ After clicking on the link, hover over a plot to learn more about the county.
 The larger the bubble, the more deaths that county experienced. The higher the quintile, the more death the county experienced per 1000.
 
 
-#### [{ Click ME 2 }](https://rpubs.com/ekoorb03/plots_medianage) "COVID-19 Mortality (quintiles) by Median Age in Michigan Counties"
+#### "COVID-19 Mortality (quintiles) by Median Age in Michigan Counties" [{Click ME}](https://rpubs.com/ekoorb03/plots_medianage) 
 [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/age_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_medianage)
 - *interesting finding to be noted* 
 
 ---
 
-#### [{ Click ME 3 }](https://rpubs.com/ekoorb03/plots_pubassistance) "COVID-19 Mortality (quintiles) by % of HH on Public Assistance in Michigan Counties"
+#### "COVID-19 Mortality (quintiles) by % of HH on Public Assistance in Michigan Counties"[{Click ME}](https://rpubs.com/ekoorb03/plots_pubassistance)
 [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/assist_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_pubassistance)
 - *interesting finding to be noted* 
 
 ---
 
-#### [{ Click ME 4 }](https://rpubs.com/ekoorb03/plots_income) "COVID-19 Mortality (quintiles) by Median income in Michigan Counties"
+#### "COVID-19 Mortality (quintiles) by Median income in Michigan Counties" [{Click ME}](https://rpubs.com/ekoorb03/plots_income)
 [![incomeplot](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/income_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_income)
 - *interesting finding to be noted* 
 
 ---
 
-#### [{ Click ME 5 }](https://rpubs.com/ekoorb03/plots_education) "COVID-19 Mortality (quintiles) by % of Adults 25+ with 4 year degrees or higher in Michigan Counties"
+#### "COVID-19 Mortality (quintiles) by % of Adults 25+ with 4 year degrees or higher in Michigan Counties" [{Click ME}](https://rpubs.com/ekoorb03/plots_education) 
  [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/ed_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_education)
 - *interesting finding to be noted* 
 
