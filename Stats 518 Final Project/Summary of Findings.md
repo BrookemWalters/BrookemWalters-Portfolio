@@ -71,25 +71,25 @@ The larger the bubble, the more deaths that county experienced. The higher the q
 
 
 #### [{ Click ME 2 }](https://rpubs.com/ekoorb03/plots_medianage) "COVID-19 Mortality (quintiles) by Median Age in Michigan Counties"
-![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/age_sp.jpeg?raw=true)
+[![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/age_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_medianage)
 - *interesting finding to be noted* 
 
 ---
 
 #### [{ Click ME 3 }](https://rpubs.com/ekoorb03/plots_pubassistance) "COVID-19 Mortality (quintiles) by % of HH on Public Assistance in Michigan Counties"
-![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/assist_sp.jpeg?raw=true)
+[![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/assist_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_pubassistance)
 - *interesting finding to be noted* 
 
 ---
 
 #### [{ Click ME 4 }](https://rpubs.com/ekoorb03/plots_income) "COVID-19 Mortality (quintiles) by Median income in Michigan Counties"
-![incomeplot](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/income_sp.jpeg?raw=true)
+[![incomeplot](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/income_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_income)
 - *interesting finding to be noted* 
 
 ---
 
 #### [{ Click ME 5 }](https://rpubs.com/ekoorb03/plots_education) "COVID-19 Mortality (quintiles) by % of Adults 25+ with 4 year degrees or higher in Michigan Counties"
- ![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/ed_sp.jpeg?raw=true) 
+ [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/ed_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_education)
 - *interesting finding to be noted* 
 
 
