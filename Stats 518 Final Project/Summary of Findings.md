@@ -98,7 +98,7 @@ The larger the bubble, the more deaths that county experienced. The higher the q
 
 
 
-#### [** Click ME [6] **](https://rpubs.com/ekoorb03/plots_pubassistance) "COVID-19 Mortality (quintiles) by % of Adults 25+ with 4 year degrees or higher in Michigan Counties"
+#### [** Click ME [6] **](https://rpubs.com/ekoorb03/plots_education) "COVID-19 Mortality (quintiles) by % of Adults 25+ with 4 year degrees or higher in Michigan Counties"
  ![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/ed_sp.jpeg?raw=true) 
 - *interesting finding to be noted* 
 

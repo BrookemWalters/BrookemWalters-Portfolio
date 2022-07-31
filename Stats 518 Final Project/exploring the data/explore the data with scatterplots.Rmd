@@ -123,7 +123,7 @@ mortal_palette <-  c("#999999", "#00798c", "#66a182", "#edae49", "#dc0000b2")
 - update the x axis with the desired variable, and update the title to reflect the changes
 ```{r housing assistance plots}
 assist_sp <- covid_quintile_chart %>% 
-  ggplot( aes(x = `% of HH on Public Assist.`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=covid_mortality_quintile, text=County)) +
+  ggplot( aes(x = `% of Ad`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color=covid_mortality_quintile, text=County)) +
   geom_point(alpha = 6/10) +
   scale_size_continuous(range = c(2, 15)) +
   labs(title = "COVID-19 Mortality Rate by Percent of Households on Assistance",
