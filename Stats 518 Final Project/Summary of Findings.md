@@ -27,8 +27,7 @@ Stats 518
 ---
 ## How To Use
 **There are {five} sites to visit:** 
-*follow the **{Click ME}** link or image to explore the data* \
-
+*follow the **{Click ME}** link or image to explore the data* 
 
 #### Table of County Demographics and COVID-19 Mortality [{Click ME}](https://073308-brooke.shinyapps.io/MIShiny/) 
 [![screenshot](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/Table%20Screenshot.jpg?raw=true)](https://073308-brooke.shinyapps.io/MIShiny/)
