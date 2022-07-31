@@ -26,7 +26,7 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
    - bootstrapping -> can I use the unemployment rate to predict COVID-19 percentile???
 
 *As of July 30th 2022, this data reflects COVID-19 deaths as of July 28th 2022*
-#### [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources): *American Community Survey [(ACS)](https://www.census.gov/programs-surveys/acs/about.html), and the COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University* 
+#### [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources): *American Community Survey [(ACS)](https://www.census.gov/programs-surveys/acs/about.html)2016 - 2020 Estimates, and the COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University* 
 ---
 ## How To Use
 **There are [6] sites to visit:** 
