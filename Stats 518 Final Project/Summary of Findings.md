@@ -26,7 +26,7 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
 ---
 ## How To Use
 **There are {5} sites to visit:** 
-*follow the **{ Click ME 3 }** link to explore the data* \
+*follow the **{ Click ME }** link to explore the data* \
 ![image](https://user-images.githubusercontent.com/99227900/180902925-2471672c-c495-4022-b7fb-f70fd0a307e9.png)
 
 
