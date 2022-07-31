@@ -15,7 +15,7 @@ My Stat 518 project seeks to explore the relationship between COVID-19 deaths an
 - **Calculates** COVID-19 deaths per thousand
 - **Groups** the 83 counties of Michigan into 5 risk segments (quintiles), 1 being the lowest rate of COVID-19 deaths
 - **Connects** to the census.gov database and retrieves the latest population estimates
-- **Compiles** the unemployment rate, education rate, median income, median age, and county racial compositions
+- **Compiles** the unemployment rate, education rate, household public assistance utilization rate,  median income, median age, and county racial compositions
 - **Joins** the two datasets together via county
 - **Reveals** the summary statistics of the numeric variables
 - **Vizualizes** the data into tables and scatter plots 
