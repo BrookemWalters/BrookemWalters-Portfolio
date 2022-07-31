@@ -1,5 +1,3 @@
-#### *Draft*  *Draft* *Draft* 
-
 # COVID-19 Mortality & Socioeconomic Trends in Michigan, by County
 Brooke Walters \
 July 23, 2022
