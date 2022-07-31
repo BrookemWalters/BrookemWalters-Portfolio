@@ -55,7 +55,7 @@ Here are a few traits of the average Q1 county:
 - the least amount of unemployment
 - the least amount of households on public assistance
 
-**Example Q1 counties include**
+**Example Q1 counties include:**
 - Kent
 - Alger
 - Grand Traverse
@@ -65,7 +65,7 @@ Here are a few traits of the average Q1 county:
 ---
 ## Scatter Plots
 The interactive graphs show the relationship between one socioeconomic variable and the COVID-19 mortality rate. 
-After clicking on the link, hover over a plot to learn more about each county. 
+After clicking on the link, hover over a plot to learn more about the county. 
 The larger the bubble, the more deaths that county experienced. The higher the quintile, the more death the county experienced per 1000.
 
 
