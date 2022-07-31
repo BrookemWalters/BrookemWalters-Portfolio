@@ -50,7 +50,6 @@ quintiles_cc <- read.csv("covid_mortality_summary.csv") %>%
         `Covid Deaths Avg` = "Covid.Death.Avg",
         `Covid Deaths Per Thousand Avg` = "Covid.Deaths.per.Thousand.Avg"
     )
-
     
 
 
@@ -91,7 +90,24 @@ server <- function(input, output, session){
         entire_table_cc %>% select(-1) })
     
     output$quintiles_cc<- renderDT({
-        quintiles_cc %>% select(-1) })
+       #rearrange columns
+         quintiles_cc %>% select(
+                                 `Covid Mortality Quintile`,
+                                 `Covid Deaths Per Thousand Avg`,
+                                 `Covid Deaths Avg`,
+                                 `Population Avg`,
+                                 `Households Avg`,
+                                 `Age Avg`,
+                                 `HH Income Avg`,
+                                 `Percent College Grad Avg`,
+                                 `Percent HHs on Assistance Avg`,
+                                 `Unemployment Rate Avg`,
+                                 `Percent Asian Avg`,
+                                 `Percent Black Avg`,
+                                 `Percent Native American Avg`,
+                                 `Percent Pacific Islander Avg`,
+                                 `Percent White Avg`,
+                                 `Percent Hispanic Avg`, )})
     
 }
 
