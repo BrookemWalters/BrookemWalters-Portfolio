@@ -78,51 +78,41 @@ The larger the bubble, the more deaths that county experienced. The higher the q
 
 [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/age_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_medianage)
 
-> *moderate positive relationship between median age and COVID-19 mortality rate: r = 0.49*
-> *as rates of median age increases, the COVID-19 mortality rate increases*
->
->
-> The figure shows that Otononagon, a Q5 county, has the highest median age of 59.1. 
-> *As of August 1st 2022, 40 people died of COVID-19 (7.0 per thousand) in Otononagon county*
+>  r = 0.49 | ***moderate positive relationship:*** *as rates of median age increases, the COVID-19 mortality rate increases*
+> The figure shows that Otononagon, a Q5 county, has the highest median age of 59.1.
+> 
+>  *As of August 1st 2022, 40 people died of COVID-19 (7.0 per thousand) in Otononagon county*
 
----
 
 #### "COVID-19 Mortality (quintiles) by % of Households on Public Assistance in Michigan Counties"[{Click ME}](https://rpubs.com/ekoorb03/plots_pubassistance)
 [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/assist_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_pubassistance)
 
-> *weak positive relationship between the percentage of households on public assistance and COVID-19 mortality rate: r = 0.37* 
-> *as rates of public assistance increase, the COVID-19 mortality rate increases*
->
-> Wayne, the most populous and a Q4 county, stands out as the area with the highest percentage of households on public assistance.  
+> r = 0.37 |***weak positive relationship:*** *as rates of public assistance increase, the COVID-19 mortality rate increases*
+>  
+>  Wayne, the most populous and a Q4 county, stands out as the area with the highest percentage of households on public assistance.  
 > *As of August 1st 2022, 8190 people died of COVID-19 (4.7 per thousand) in Wayne county.*
 
----
 
 #### "COVID-19 Mortality (quintiles) by Median income in Michigan Counties" [{Click ME}](https://rpubs.com/ekoorb03/plots_income)
 [![incomeplot](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/income_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_income)
 
-> *moderate negative relationship between the median income and COVID-19 mortality rate: r = -0.50* 
-> *as incomes increases the COVID-19 mortality rate lessens*
+> r = -0.50* | ***moderate negative relationship:*** *as incomes increases the COVID-19 mortality rate lessens*
 >
 > All of the Q5 quintiles fall under a median income of $60k, with most counties' income falling in the range of $40-50k.
-> Livingston a Q1 county, with a median income of $84k just surpassed Oakland, another Q1 county,  as the weathliest area in Michigan. 
+> Livingston, a Q1 county, with a median income of $84k just surpassed Oakland, another Q1 county,  as the wealthiest area in Michigan. 
+> 
 > *As of August 1st 2022, 473 people died of COVID-19 (2.5 per thousand) in Livingston county.*
 
----
 
 #### "COVID-19 Mortality (quintiles) by % of Adults 25+ with 4 year degrees or higher in Michigan Counties" [{Click ME}](https://rpubs.com/ekoorb03/plots_education) 
  [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/ed_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_education)
 
-> *moderate negative relationship between the percentage of adults 25+ with college degrees and COVID-19 mortality rate: r = -0.50* 
-> *as percentage of education attainment increases the COVID-19 mortality rate lessens*
+> r = -0.50 |  ***moderate negative relationship:*** *as percentage of education attainment increases the COVID-19 mortality rate lessens*
 >
 > Home to the University of Michigan, Washtenaw is Michigan's most educated county, with 56.7% This Q1 county stands out considering most Michgian counties fall under 30 %
 > 
 > *As of August 1st 2022, 545 people died of COVID-19 (1.5 per thousand) in Washtenaw county.*
 
-
-
----
 **Back to the [bias disclosure and intro](https://github.com/BrookemWalters/BrookemWalters-Portfolio/edit/main/Stats%20518%20Final%20Project/Introduction.md).** \
 **Jump to the [source code](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data).**
 
