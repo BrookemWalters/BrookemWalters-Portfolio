@@ -1,4 +1,4 @@
-## [Introduction to COVID-19 Michigan Mortality & Socioeconomic Trends]
+## Introduction to COVID-19 Michigan Mortality & Socioeconomic Trends
 
 At the age of 16, my grandmother “Nana” left her parents and nine siblings behind in pursuit of a better life in Grand Rapids, Michigan. Her parents were sharecroppers, and if you know anything about 1950’s Mississippi – life wasn’t exactly ideal for a young black woman. 
 
