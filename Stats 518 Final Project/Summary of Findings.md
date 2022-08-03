@@ -1,7 +1,7 @@
-# COVID-19 Mortality & Socioeconomic Trends in Michigan, by County
+# COVID-19 Mortality & Socioeconomic Trends in Michigan
 ### *Exploring the relationship between COVID-19 deaths and socioeconomic factors in Michigan counties* 
 Brooke Walters \
-July 23, 2022 \
+Aug 2, 2022 \
 Stats 518
 
 
@@ -24,8 +24,11 @@ Stats 518
 
 
 *As of July 30th 2022, this data reflects COVID-19 deaths as of July 28th 2022*
-#### [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources): *American Community Survey [(ACS)](https://www.census.gov/programs-surveys/acs/about.html) 2016 - 2020 Estimates, and the COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University* 
+
+**[Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources)**: *American Community Survey [(ACS)](https://www.census.gov/programs-surveys/acs/about.html) 2016 - 2020 Estimates, and the COVID-19 Data [Repository](https://github.com/CSSEGISandData/COVID-19) by the Center for Systems Science and Engineering (CSSE) at Johns Hopkins University* 
+
 ---
+
 ## How To Use
 **There are {five} sites to visit:** 
 *follow the **{Click ME}** link or image to explore the data* 
@@ -64,33 +67,59 @@ With an average of 2.4 deaths per thousand, counties in the first quintile (Q1),
 - Marquette
 
 ---
-## Scatter Plots
+
+## The Scatter Plots
 The interactive graphs show the relationship between one socioeconomic variable and the COVID-19 mortality rate. 
 After clicking on the link, hover over a plot to learn more about the county. 
 The larger the bubble, the more deaths that county experienced. The higher the quintile, the more death the county experienced per 1000.
 
 
-#### "COVID-19 Mortality (quintiles) by Median Age in Michigan Counties" [{Click ME}](https://rpubs.com/ekoorb03/plots_medianage) 
+#### "COVID-19 Mortality (quintiles) by Median Age in Michigan Counties" [{Click ME}](https://rpubs.com/ekoorb03/plots_medianage)
+
 [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/age_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_medianage)
-- *interesting finding to be noted* 
+
+> *moderate positive relationship between median age and COVID-19 mortality rate: r = 0.49*
+> *as rates of median age increases, the COVID-19 mortality rate increases*
+>
+>
+> The figure shows that Otononagon, a Q5 county, has the highest median age of 59.1. 
+> *As of August 1st 2022, 40 people died of COVID-19 (7.0 per thousand) in Otononagon county*
 
 ---
 
-#### "COVID-19 Mortality (quintiles) by % of HH on Public Assistance in Michigan Counties"[{Click ME}](https://rpubs.com/ekoorb03/plots_pubassistance)
+#### "COVID-19 Mortality (quintiles) by % of Households on Public Assistance in Michigan Counties"[{Click ME}](https://rpubs.com/ekoorb03/plots_pubassistance)
 [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/assist_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_pubassistance)
-- *interesting finding to be noted* 
+
+> *weak positive relationship between the percentage of households on public assistance and COVID-19 mortality rate: r = 0.37* 
+> *as rates of public assistance increase, the COVID-19 mortality rate increases*
+>
+> Wayne, the most populous and a Q4 county, stands out as the area with the highest percentage of households on public assistance.  
+> *As of August 1st 2022, 8190 people died of COVID-19 (4.7 per thousand) in Wayne county.*
 
 ---
 
 #### "COVID-19 Mortality (quintiles) by Median income in Michigan Counties" [{Click ME}](https://rpubs.com/ekoorb03/plots_income)
 [![incomeplot](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/income_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_income)
-- *interesting finding to be noted* 
+
+> *moderate negative relationship between the median income and COVID-19 mortality rate: r = -0.50* 
+> *as incomes increases the COVID-19 mortality rate lessens*
+>
+> All of the Q5 quintiles fall under a median income of $60k, with most counties' income falling in the range of $40-50k.
+> Livingston a Q1 county, with a median income of $84k just surpassed Oakland, another Q1 county,  as the weathliest area in Michigan. 
+> *As of August 1st 2022, 473 people died of COVID-19 (2.5 per thousand) in Livingston county.*
 
 ---
 
 #### "COVID-19 Mortality (quintiles) by % of Adults 25+ with 4 year degrees or higher in Michigan Counties" [{Click ME}](https://rpubs.com/ekoorb03/plots_education) 
  [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/ed_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_education)
-- *interesting finding to be noted* 
+
+> *moderate negative relationship between the percentage of adults 25+ with college degrees and COVID-19 mortality rate: r = -0.50* 
+> *as percentage of education attainment increases the COVID-19 mortality rate lessens*
+>
+> Home to the University of Michigan, Washtenaw is Michigan's most educated county, with 56.7% This Q1 county stands out considering most Michgian counties fall under 30 %
+> 
+> *As of August 1st 2022, 545 people died of COVID-19 (1.5 per thousand) in Washtenaw county.*
+
 
 
 ---
