@@ -110,7 +110,7 @@ The larger the bubble, the more deaths that county experienced. The higher the q
 
 > r = -0.50 |  ***moderate negative relationship:*** *as percentage of education attainment increases the COVID-19 mortality rate lessens*
 >
-> Home to the University of Michigan, Washtenaw is Michigan's most educated county, with 56.7% This Q1 county stands out considering most Michgian counties fall under 30 %
+> Home to the University of Michigan, Washtenaw is Michigan's most educated county, with 56.7% of adults 25+ holding college degrees. This Q1 county stands out considering most Michgian counties rate of higher education attainment is under 30%.
 > 
 > *As of August 1st 2022, 545 people died of COVID-19 (1.5 per thousand) in Washtenaw county.*
 
