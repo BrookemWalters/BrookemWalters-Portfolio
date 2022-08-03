@@ -79,6 +79,7 @@ The larger the bubble, the more deaths that county experienced. The higher the q
 [![](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Plots/age_sp.jpeg?raw=true)](https://rpubs.com/ekoorb03/plots_medianage)
 
 >  r = 0.49 | ***moderate positive relationship:*** *as median age increases, the COVID-19 mortality rate increases*
+>  
 > The figure shows that Otononagon, a Q5 county, has the highest median age of 59.1.
 > 
 >  *As of August 1st 2022, 40 people died of COVID-19 (7.0 per thousand) in Otononagon county*
