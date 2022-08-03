@@ -1,6 +1,6 @@
 # Growth as a Data Person #
 
-I am at the primordial stage of my data science journey. This semester confirmed that data science is the path I want to explore further. As I wrote my Stats 518 project, “[COVID-19 Mortality and Socioeconomic Trends in Michigan by County]( ),” I gained a new appreciation for statistical computing, and I look forward to acquiring the knowledge to build complex models. 
+I am at the primordial stage of my data science journey. This semester confirmed that data science is the path I want to explore further. As I wrote my Stats 518 project, “[COVID-19 Mortality & Socioeconomic Trends in Michigan](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality--socioeconomic-trends-in-michigan),” I gained a new appreciation for statistical computing, and I look forward to acquiring the knowledge to build complex models. 
 
 
 Before this class, I was comfortable analyzing, aggregating, and visualizing data at a base level. Up until this point, my experience wrangling data had an intense focus on consumer segmentation and behavior for the purpose of perpetuating consumerism.  I heavily used point-and-click software that required a smidgen of SQL, like [Neustar Element One](https://www.home.neustar/resources/videos/elementone_demo).  The software did all of the statistical heavy lifting. 
