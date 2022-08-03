@@ -11,7 +11,7 @@ Throughout my portfolio, I’ve illustrated that I’m on the path to earn an A 
     -	In this document, I outline how to leverage the `{tidyverse}`: and `{tidycensus}` packages to discover the population trends of Michigan counties, and tidy up variables to join the datasets. 
 
 #### **Create graphical displays and numerical summaries of data for exploratory analysis and presentations**
--	From there, I’ve provided readers with a summary of findings in the *[Exploring the Data With Summary Stats]( https://rpubs.com/ekoorb03/Guides_Summary_Stats)*
+-	From there, I’ve provided readers with a summary of findings in the *[The Final Results](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county)*
 document. I’ve created three tables in a `{shiny}` app for a county by county comparison that reveals the average differences from a socioeconomic and COVID-19 mortality rate perspective. 
 
     -	A needed improvement is utilizing a function to change variable names between their descriptive (a format lost in CSV form) and the “tidy” version. 
