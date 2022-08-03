@@ -1,4 +1,4 @@
-## [Introduction to COVID-19 Michigan Mortality & Socioeconomic Trends](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county)
+## [Introduction to COVID-19 Michigan Mortality & Socioeconomic Trends]
 
 At the age of 16, my grandmother “Nana” left her parents and nine siblings behind in pursuit of a better life in Grand Rapids, Michigan. Her parents were sharecroppers, and if you know anything about 1950’s Mississippi – life wasn’t exactly ideal for a young black woman. 
 
