@@ -114,7 +114,7 @@ The larger the bubble, the more deaths that county experienced. The higher the q
 > 
 > *As of August 1st 2022, 545 people died of COVID-19 (1.5 per thousand) in Washtenaw county.*
 
-**Back to the [bias disclosure and intro](https://github.com/BrookemWalters/BrookemWalters-Portfolio/edit/main/Stats%20518%20Final%20Project/Introduction.md).** \
+**Back to the [bias disclosure and intro](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Introduction.md#introduction-to-covid-19-michigan-mortality--socioeconomic-trends).** \
 **Jump to the [source code](https://github.com/BrookemWalters/BrookemWalters-Portfolio/tree/main/Stats%20518%20Final%20Project/exploring%20the%20data).**
 
 
