@@ -6,12 +6,13 @@ I am at the primordial stage of my data science journey. This semester confirmed
 Before this class, I was comfortable analyzing, aggregating, and visualizing data at a base level. Up until this point, my experience wrangling data had an intense focus on consumer segmentation and behavior for the purpose of perpetuating consumerism.  I heavily used point-and-click software that required a smidgen of SQL, like [Neustar Element One](https://www.home.neustar/resources/videos/elementone_demo).  The software did all of the statistical heavy lifting. 
 
 
-While my project is not quite up to the bar I’ve set for myself, given that I was a true coding beginner with only two statistics courses under my belt, I am proud of all that I’ve accomplished this semester. I had to prioritize functionality over form to meet the deadline (this hurts more than you may know), but I have confidence that with more time and skill I can create beautiful visualizations that will outshine my abilities in Tableau and MS Office suite. 
+While my project is not quite up to the bar I’ve set for myself, given that I was a true coding beginner with only two statistics courses under my belt, I am proud of all that I’ve accomplished this semester. I had to prioritize functionality over form to meet the deadline (this hurts more than you may know), but I have confidence that with more time and skill, I can create beautiful visualizations with the R language that will outshine my abilities in Tableau and MS Office suite. 
 
 
 ### Here are a couple of examples of my growth:
 
-Earlier this semester, I created tables and box plots comparing weight by gender with the ::starwars:: dataset. Compare this to where I am now, nearing the end of the semester, I connected to two separate open-source reports and plotted several dimensions in interactive scatter plots and tables. 
+Earlier this semester, I created the tables and box plots below comparing weight by gender with the ::starwars:: dataset. Compare this to my end of semester progress, the links below lead to vizualizations layered with more complex data. 
+
 While there is beauty in the simplicity of the early visualizations, the coding skills needed to create the dynamic charts are more advanced. 
 
 *To do: Three supporting points on the skills needed for the advanced plots*
