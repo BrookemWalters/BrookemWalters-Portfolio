@@ -36,7 +36,9 @@ library(tidyverse)
 
 ```{r rename variables}
 table_covid_census <-  read.csv("~/STA 518/BrookemWalters-Portfolio/Stats 518 Final Project/data/covid_census.csv") %>% 
-  select(County, population19E, householdsE, median_ageE,median_incomeE, bach_degree_plus_a25E, public_assist_rate, unemployment_rate, percent_asian, percent_asian, percent_black,percent_native, percent_pacific_islander, percent_white, percent_hispanic,Total_Deaths, Deaths_Per_Pop_Thousand) %>% 
+  select(County, population19E, householdsE, median_ageE,median_incomeE, bach_degree_plus_a25E, public_assist_rate,
+         unemployment_rate, percent_asian, percent_asian, percent_black,percent_native, percent_pacific_islander, 
+         percent_white, percent_hispanic,Total_Deaths, Deaths_Per_Pop_Thousand) %>% 
   rename( 
     Population = "population19E",
     Households = "householdsE",
@@ -65,8 +67,8 @@ sum_table_covid_census <- select(table_covid_census, -County)
 ```
 
 
-- Calculate a five number summary of all variable using the "describe" function from the ::pysch:: package
-  - **note* the ::pysch:: has a major conflict the ::ggplot2:: -to avoid bugs later, it's best to run it as part of the function
+- Calculate a five number summary of all variable using the "describe" function from the {pysch} package
+  - **note* the ::pysch:: has a major conflict the {ggplot2} -to avoid bugs later, it's best to run it as part of the function
 
 ```{r five number sum it all}
 sum_table_covid_census <- psych::describe(sum_table_covid_census, fast = TRUE ) %>% 
@@ -104,8 +106,11 @@ write.csv(sum_table_covid_census,"~/STA 518/BrookemWalters-Portfolio/Stats 518 F
 
 ```{r table_covid_census}
 table_covid_census <-  table_covid_census %>% 
-  select(County, Population, Households,`Total Covid Deaths`, `Covid Deaths Per Thousand`,  `Median Age`, `Median HHI`, `% A25+ College Grad+`,
-         `Unemployment Rate`, `% of HH on Public Assist.`, `% Asian`, `% Black`, `% Native American`, `% Pacific Islander`, `% White`, `% Hispanic`)
+  select(County, Population, Households,`Total Covid Deaths`,
+         `Covid Deaths Per Thousand`,  `Median Age`, `Median HHI`,
+         `% A25+ College Grad+`, `Unemployment Rate`, `% of HH on Public Assist.`,
+         `% Asian`, `% Black`, `% Native American`, `% Pacific Islander`,
+         `% White`, `% Hispanic`)
 ```
 
  

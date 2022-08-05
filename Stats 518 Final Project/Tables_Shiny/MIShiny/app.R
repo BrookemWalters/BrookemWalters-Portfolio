@@ -12,9 +12,11 @@ library(DT)
 library(tidyverse)
 
 
-sum_table_cc <- read.csv("covid_census_summary_stats.csv")
+sum_table_cc <- read.csv("covid_census_summary_stats.csv") %>% 
+    rename( `Socioeconomic Factor` = "socioeconomic.factor")
+
 entire_table_cc <- read.csv("Covid_Census_Table.csv") %>% 
-    rename( 
+    rename(
         `Median Age` = "Median.Age",
         `Median HHI` = "Median.HHI",
         `% A25+ College Grad+` = "X..A25..College.Grad.",

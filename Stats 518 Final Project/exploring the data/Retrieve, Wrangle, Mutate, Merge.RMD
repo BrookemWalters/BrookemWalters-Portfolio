@@ -13,9 +13,9 @@ output: html_document
 
 - Retrieves the most up-to-date covid death totals for the state of Michigan by county 
 - Calculates county covid deaths per 1000 
-- Pulls the most recent ACS demographic estimates (2019 is the most current release as of today) 
+- Pulls the most recent ACS demographic estimates (2020 is the most current release as of today) 
 - Calculates, county rate of unemployment, public assistance usage, and racial compositions 
-- Merges the [JHU CSSE COVID-19](https://github.com/CSSEGISandData/COVID-19) morbidity data with the [American Community Survey (ACS) 2016 -2020 5 Year estimates](https://www.census.gov/data/developers/data-sets/acs-5year.html) estimates into a CSV file for export
+- Merges the [JHU CSSE COVID-19](https://github.com/CSSEGISandData/COVID-19) morbidity data with the [American Community Survey (ACS) 2016 - 2020 5 Year estimates](https://www.census.gov/data/developers/data-sets/acs-5year.html) estimates into a CSV file for export
 
 [Here](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Introduction.md#introduction-to-michigan-counties-in-a-pandemic) explains the inspiration and the potential bias I bring to my data analysis. 
 
@@ -50,9 +50,7 @@ library(tidyverse)
  - and assign it a value
 
 ```{r pull cummlative covid deaths from repository}
-
 jh_covid_repo <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_US.csv"
-  
 us_cd_deaths <- read_csv(jh_covid_repo)
 
 ```
@@ -135,7 +133,7 @@ For steps 2.4 - 2.6 I'll pull the ACS variables in two chunks, it's easier to ma
 - set two racial population estimates
 
 ### Step 2.4 
- - pull factors:   population, and estimates: household, median age, median income, unemployed population, labor force population, households on public assistant,  and adults over 25 with a bachelor's degree or higher
+ - pull factors:  population, and estimates: household, median age, median income, unemployed population, labor force population, households on public assistant,  and adults over 25 with a bachelor's degree or higher
 
 ```{r health determinate variables}
 ac_eccon_factors <- get_acs(
