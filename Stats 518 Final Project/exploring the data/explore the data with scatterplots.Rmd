@@ -199,6 +199,7 @@ income_sp <- covid_quintile_chart %>%
   ggplot( aes(x = `Median Household Income`, y = `Covid Deaths Per Thousand`, size = `Total Covid Deaths`, color= covid_mortality_quintile, text=County)) +
   geom_point(alpha = 6/10) +
   scale_size_continuous(range = c(2, 15)) +
+  scale_x_continuous(labels=scales::dollar_format()) +
  labs(title ="COVID-19 Mortality Rate by Median Household Income",
        subtitle = "Michigan Counties, deaths per 1000",
        caption = print_sources,

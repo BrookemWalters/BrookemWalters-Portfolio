@@ -1,0 +1,13 @@
+name: MIShinytest
+title: MIShinytest
+username:
+account: vu0xc1-brooke
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6743531
+bundleId: 6171322
+url: https://vu0xc1-brooke.shinyapps.io/MIShinytest/
+when: 1659702622.37848
+lastSyncTime: 1659702622.37849
+asMultiple: FALSE
+asStatic: FALSE

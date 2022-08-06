@@ -1,0 +1,13 @@
+name: NewShinyCovid
+title: NewShinyCovid
+username:
+account: 073308-brooke
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6743422
+bundleId: 6171073
+url: https://073308-brooke.shinyapps.io/NewShinyCovid/
+when: 1659700136.78407
+lastSyncTime: 1659700136.78408
+asMultiple: FALSE
+asStatic: FALSE

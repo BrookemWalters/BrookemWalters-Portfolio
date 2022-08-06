@@ -12,11 +12,9 @@ library(DT)
 library(tidyverse)
 
 
-sum_table_cc <- read.csv("covid_census_summary_stats.csv") %>% 
-    rename( `Socioeconomic Factor` = "socioeconomic.factor")
-
+sum_table_cc <- read.csv("covid_census_summary_stats.csv")
 entire_table_cc <- read.csv("Covid_Census_Table.csv") %>% 
-    rename(
+    rename( 
         `Median Age` = "Median.Age",
         `Median HHI` = "Median.HHI",
         `% A25+ College Grad+` = "X..A25..College.Grad.",
@@ -45,14 +43,14 @@ quintiles_cc <- read.csv("covid_mortality_summary.csv") %>%
         `Unemployment Rate Avg` = "Unemployment.Rate.Avg",
         `Percent Asian Avg` = "Percent.Asian.Avg",
         `Percent Black Avg` = "Percent.Black.Avg",
-         `Percent Native American Avg` = "Percent.Native.American.Avg",
+        `Percent Native American Avg` = "Percent.Native.American.Avg",
         `Percent Pacific Islander Avg` = "Percent.Pacific.Islander.Avg",
         `Percent White Avg` = "Percent.White.Avg",
         `Percent Hispanic Avg` = "Percent.Hispanic.Avg",
         `Covid Deaths Avg` = "Covid.Death.Avg",
         `Covid Deaths Per Thousand Avg` = "Covid.Deaths.per.Thousand.Avg"
     )
-    
+
 
 
 # Define UI for application that draws a histogram
@@ -79,7 +77,7 @@ ui <-
             ),
             
         ))
- 
+
 # Define server logic required to draw a histogram
 server <- function(input, output, session){
     
@@ -92,24 +90,24 @@ server <- function(input, output, session){
         entire_table_cc %>% select(-1) })
     
     output$quintiles_cc<- renderDT({
-       #rearrange columns
-         quintiles_cc %>% select(
-                                 `Covid Mortality Quintile`,
-                                 `Covid Deaths Per Thousand Avg`,
-                                 `Covid Deaths Avg`,
-                                 `Population Avg`,
-                                 `Households Avg`,
-                                 `Age Avg`,
-                                 `HH Income Avg`,
-                                 `Percent College Grad Avg`,
-                                 `Percent HHs on Assistance Avg`,
-                                 `Unemployment Rate Avg`,
-                                 `Percent Asian Avg`,
-                                 `Percent Black Avg`,
-                                 `Percent Native American Avg`,
-                                 `Percent Pacific Islander Avg`,
-                                 `Percent White Avg`,
-                                 `Percent Hispanic Avg`, )})
+        #rearrange columns
+        quintiles_cc %>% select(
+            `Covid Mortality Quintile`,
+            `Covid Deaths Per Thousand Avg`,
+            `Covid Deaths Avg`,
+            `Population Avg`,
+            `Households Avg`,
+            `Age Avg`,
+            `HH Income Avg`,
+            `Percent College Grad Avg`,
+            `Percent HHs on Assistance Avg`,
+            `Unemployment Rate Avg`,
+            `Percent Asian Avg`,
+            `Percent Black Avg`,
+            `Percent Native American Avg`,
+            `Percent Pacific Islander Avg`,
+            `Percent White Avg`,
+            `Percent Hispanic Avg`, )})
     
 }
 
