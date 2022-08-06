@@ -24,10 +24,10 @@ Along with creating a more complex dataset, I presented my final project finding
 **Here are a few examples of more advanced coding from my final project:**
 
 
-- A simple variable filtering function: [line 120 of my “Retrieve, Wrangle, Mutate, Merge” document](Stats 518 Final Project/exploring the data/Retrieve, Wrangle, Mutate, Merge.RMD )
+- A simple variable filtering function: [line 120 of my “Retrieve, Wrangle, Mutate, Merge” document](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/exploring%20the%20data/Retrieve%2C%20Wrangle%2C%20Mutate%2C%20Merge.RMD)
 
 
--  A for loop that calculates the absolute difference of means for hypothesis testing: [line 111 from "Boot Strap the Covid"](Stats 518 Final Project/Bootstrapping/Covid_Census_Boots.Rmd)
+-  A for loop that calculates the absolute difference of means for hypothesis testing: [line 111 from "Boot Strap the Covid"](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Bootstrapping/Covid_Census_Boots.Rmd)
 
 
 ### The final component of my growth are the many lessons learned:
