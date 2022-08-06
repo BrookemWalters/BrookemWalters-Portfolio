@@ -37,7 +37,7 @@ Along with creating a more complex dataset, I presented my final project finding
 
 -	**Keeping the end goal in mind, and planning time to troubleshoot:** Again with the benefit of hindsight, I should have put more thought on to where my project would live. Midway through the project I realized GITHUB was not ideal for interactive graphs, and discovered the ease of publishing documents to Rpubs with the knitting feature. After this course, I plan on moving the entire final project to Rpubs and building a more integrated navigation experience. After this major change, I will feel more comfortable sharing my work (outside of my bewildered friends and family). 
 
--	**I gained an appreciation for the open source community of R:** In my [Sources](Stats 518 Final Project/Sources/sources.md) document, I link to the most influential tutorials that guided me through my end result. Additionally, the free packages such as `{psych}`, saved me countless hours in my attempt to narrow down 83 counties worth of data into summary statistics. 
+-	**I gained an appreciation for the open source community of R:** In my [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources) document, I link to the most influential tutorials that guided me through my end result. Additionally, the free packages such as `{psych}`, saved me countless hours in my attempt to narrow down 83 counties worth of data into summary statistics. 
 
 
 #### **Mid-Semester Work**
