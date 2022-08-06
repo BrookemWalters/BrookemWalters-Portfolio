@@ -1,5 +1,5 @@
 # Growth as a Data Person #
-![growth.jpg](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Images/growth.JPG?raw=true)
+![growth.jpg](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Images/growth.jpg?raw=true)
 
 I am at the primordial stage of my data science journey. This semester confirmed that data science is the path I want to explore further. As I wrote my Stats 518 project, “[COVID-19 Mortality & Socioeconomic Trends in Michigan](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality--socioeconomic-trends-in-michigan),” I gained a new appreciation for statistical computing, and I look forward to acquiring the knowledge to build complex models. 
 
