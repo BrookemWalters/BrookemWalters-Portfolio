@@ -1,0 +1,13 @@
+name: MIShiny2
+title: MIShiny2
+username:
+account: 073308-brooke
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6751220
+bundleId: 6177152
+url: https://073308-brooke.shinyapps.io/MIShiny2/
+when: 1659900768.75594
+lastSyncTime: 1659900768.75595
+asMultiple: FALSE
+asStatic: FALSE
