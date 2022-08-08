@@ -19,7 +19,7 @@ Stats 518
 - **Compiles** the unemployment rate, education rate, household public assistance utilization rate,  median income, median age, and county racial compositions
 - **Joins** the two datasets together via county
 - **Reveals** the summary statistics of the numeric variables
-- **Vizualizes** the data into [tables](https://github.com/BrookemWalters/BrookemWalters-Portfolio/edit/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#the-tables-explained) and [scatter plots](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#scatter-plots) 
+- **Vizualizes** the data into [tables](https://github.com/BrookemWalters/BrookemWalters-Portfolio/edit/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#the-tables-explained) and [scatter plots](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#the-scatter-plots) 
 
 
 
