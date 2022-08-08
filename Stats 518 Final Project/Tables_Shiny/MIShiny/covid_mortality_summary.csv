@@ -1,6 +1,6 @@
-"","covid_mortality_quintile","Population Avg","Households Avg","Age Avg","HH Income Avg","Percent College Grad Avg","Unemployment Rate Avg","Percent HHs on Assistance Avg","Percent Asian Avg","Percent Black Avg","Percent Native American Avg","Percent Pacific Islander Avg","Percent White Avg","Percent Hispanic Avg","Covid Death Avg","Covid Deaths per Thousand Avg"
-"1",1,144633.9,30999.6,41.9,59869.3,33,5.3,20.3,2,4,1.5,0,85.1,4,349.9,2.4
-"2",2,127573.6,26698.2,43.9,56891.4,24.7,5.5,22.9,1.1,3.1,2.5,0,86,3.9,401.3,3.1
-"3",3,63039.3,13754.4,43.7,53726.6,20.9,5.9,25.5,0.6,3.5,0.6,0,87.8,4.7,234.8,3.7
-"4",4,224554.6,50351,45.6,50881.2,18.7,6.1,26.5,1,5.8,0.5,0,87,3.3,1044.9,4.7
-"5",5,42614.8,8471.6,50.4,45530.4,17.7,6.7,29.1,0.4,2.5,1.3,0,90.9,2.7,232.6,5.9
+"","covid_mortality_quintile","Population Avg","Households Avg","Age Avg","HH Income Avg","Percent College Grad Avg","Percent HHs on Assistance Avg","Unemployment Rate Avg","Percent Asian Avg","Percent Black Avg","Percent Native American Avg","Percent Pacific Islander Avg","Percent White Avg","Percent Hispanic Avg","Covid Deaths Avg","Covid Deaths Per Thousand Avg"
+"1",1,144474,30950,42.6,60522.71,33.1,20.2,5.2,1.9,4,1.6,0,84.9,4,2.4,351
+"2",2,127733,26748,43.1,56237.94,24.6,22.9,5.6,1.3,3.1,2.4,0,86.2,3.9,3.1,403
+"3",3,64098,14102,43.1,53912.41,20.5,24.9,5.8,0.6,3.5,0.5,0,87.7,4.9,3.8,240
+"4",4,223716,50093,45.7,50732.31,19.2,26.9,6.2,1,5.7,0.6,0,87.1,3,4.7,1044
+"5",5,42329,8359,51,45482,17.6,29.3,6.7,0.4,2.5,1.3,0,90.9,2.7,6,232

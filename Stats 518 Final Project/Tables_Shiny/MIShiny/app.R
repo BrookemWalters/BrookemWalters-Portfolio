@@ -52,8 +52,8 @@ quintiles_cc <- read.csv("covid_mortality_summary.csv") %>%
     `Percent Pacific Islander Avg` = "Percent.Pacific.Islander.Avg",
     `Percent White Avg` = "Percent.White.Avg",
     `Percent Hispanic Avg` = "Percent.Hispanic.Avg",
-    `Covid Deaths Avg` = "Covid.Death.Avg",
-    `Covid Deaths Per Thousand Avg` = "Covid.Deaths.per.Thousand.Avg"
+    `Covid Deaths Avg` = "Covid.Deaths.Avg",
+    `Covid Deaths Per Thousand Avg` = "Covid.Deaths.Per.Thousand.Avg"
   )
 
 
