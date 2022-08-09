@@ -100,7 +100,7 @@ The larger the bubble, the more deaths that county experienced. The higher the q
 > r = -0.50 | ***moderate negative relationship:*** *as median incomes increase the COVID-19 mortality rate lessens*
 >
 > All of the Q5 quintiles fall under a median income of $60k, with most counties' income falling in the range of $40-50k.
-> Livingston, a Q1 county, with a median income of $84k just surpassed Oakland, another Q1 county,  as the wealthiest area in Michigan. 
+> Livingston, a Q1 county, with a median income of $84k just surpassed Oakland, a Q2 county,  as the wealthiest area in Michigan. 
 > 
 > *As of August 1st 2022, 473 people died of COVID-19 (2.5 per thousand) in Livingston county.*
 

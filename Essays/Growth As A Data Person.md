@@ -9,16 +9,14 @@ Before this class, I was comfortable analyzing, aggregating, and visualizing dat
 While my project is not quite up to the bar I set for myself, given that I was a true coding beginner with only two statistics courses under my belt; I am proud of the work I produced this semester. As I spend more time coding with R, I am confident I will soon create beautiful visualizations that will outshine my abilities in Tableau and MS Office suite.
 
 ### Mid-Semester Work Vs Final Project:
-Earlier this semester, I created the tables and boxplots below using the `{starwars}` data set provided by the `{tidyverse}`.  While there is beauty in the simplicity of the early visualizations, the coding skills needed to create the dynamic charts is layered with more complex code. To create the scatter plot below, I needed to determine which out of the 87 variables to analyze and how to present the COVID-19 and the ACS population estimates together in a meaningful manner. 
+Earlier this semester, I created the tables and boxplots below using the `{starwars}` data set provided by the `{tidyverse}`. While there is beauty in the simplicity of the early visualizations, the coding skills needed to create the dynamic charts are layered with more complex code.
 
+The mid-semester table was created using functions from the `{tidyverse},` and summarizes features of the Star War’s characters. Additionally, I formatted elements of the “The 17 Feminine Characters of Star Wars” table with the `{gt}` to add pizazz beyond the default elements.  
 
-To prevent outside influence on my final project, I avoided any in-depth reporting on COVID-19 statistics. However, if one of my calculations deviated wildly from the mean, I had the advantage of spot checking it against the work of others. My calculations always lined up, which was both a confidence boost and a morbid reality check of the economic and health disparities in Michigan. 
+Compare this to the `{shiny}` app table, where the information was curated and calculated to provide insights beyond the original data sources.  To prevent outside influence on my final project, I avoided any in-depth reporting on COVID-19 statistics. However, if one of my calculations deviated wildly from the mean, I had the advantage of spot checking it against the public work of others. Validating my calculations was both a confidence boost and a morbid realization of the economic and health disparities in Michigan.
 
+I landed on dividing the information into quintiles by COVID-19 mortality rate, which I used to discover demographic trends between the groups. After finalizing my visualizations, I learned that the strong link between COVID-19 and less populous rural areas was [widely reported](https://www.cidrap.umn.edu/news-perspective/2021/09/rural-americans-more-likely-die-covid-19)on, aligning with my results.
 
-I landed on dividing the information into quintiles by COVID-19 mortality rate. In hindsight, I think quartiles are the better choice for the 83 counties of Michigan, as the smaller populated geographies appeared to skew towards higher mortality rates. After I finished putting together my visualizations, I learned that the strong link between COVID-19 and less populous rural areas was [widely reported](https://www.cidrap.umn.edu/news-perspective/2021/09/rural-americans-more-likely-die-covid-19) on, aligning with the results I found.
-
-
-Along with creating a more complex data set, I presented my final project findings in a more advanced manner than my mid-semester work. 
 
 
 **Here are a few examples of more advanced coding from my final project:**
@@ -37,7 +35,7 @@ Along with creating a more complex data set, I presented my final project findin
 
 -	**Keeping the end goal in mind, and planning time to troubleshoot:** Again with the benefit of hindsight, I should have put more thought on to where my project would live. Midway through the project I realized GITHUB was not ideal for interactive graphs, and discovered the ease of publishing documents to Rpubs with the knitting feature. After this course, I plan on moving the entire final project to Rpubs and building a more integrated navigation experience. After this major change, I will feel more comfortable sharing my work (outside of my bewildered friends and family). 
 
--	**I gained an appreciation for the open-source community of R:** In my [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources) document, I link to the most influential tutorials that guided me through my end result. Additionally, the free packages such as `{psych}`, saved me countless hours in my attempt to narrow down 83 counties worth of data into summary statistics. 
+-	**Gaining an appreciation for the open-source community of R:** In my [Sources](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Sources/sources.md#sources) document, I link to the most influential tutorials that guided me through my end result. Additionally, the free packages such as `{psych}`, saved me countless hours in my attempt to narrow down 83 counties worth of data into summary statistics. 
 
 
 #### **Mid-Semester Work**
