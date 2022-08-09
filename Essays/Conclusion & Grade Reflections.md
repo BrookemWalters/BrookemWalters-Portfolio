@@ -1,6 +1,6 @@
 # Conclusion & Grade Reflections
 
-Throughout my portfolio, I’ve illustrated I earned an A in this course. 
+Throughout my portfolio, I illustrated I earned an A in this course. 
  I can write code that meets the course objectives, I have foundational statistical computing skills, and I can present the results in an organized and dynamic manner.
 
 ### Here are my artifacts and skills set evidence:
@@ -13,10 +13,7 @@ Throughout my portfolio, I’ve illustrated I earned an A in this course.
 #### **Create graphical displays and numerical summaries of data for exploratory analysis and presentations**
 -	From there, I’ve provided readers with a summary of findings in the *[The Final Results](https://github.com/BrookemWalters/BrookemWalters-Portfolio/blob/main/Stats%20518%20Final%20Project/Summary%20of%20Findings.md#covid-19-mortality-and-socioeconomic-trends-in-michigan-by-county)*
 document. I’ve created three tables in a `{shiny}` app for a county-by-county comparison that reveals the average differences from a socioeconomic and COVID-19 mortality rate perspective. 
-
-    -	A needed improvement is utilizing a function to change variable names between their descriptive (a format lost in CSV form) and the “tidy” version. 
-
-    -	In hindsight, an embedded table on a website would provide for an easier user experience, I hope to make that change in an upcoming update. **[Here](https://073308-brooke.shinyapps.io/MIShiny/)** is the current table artifact.
+ **[Here](https://073308-brooke.shinyapps.io/MIShiny/)** is the current table artifact.
     
 
 -	*[Exploring the Data with Scatter Plots]( https://rpubs.com/ekoorb03/Guides_Scatter_Plots)* demonstrates how to utilize the `{plotly}` package to visualize and explore the relationship between two variables.
@@ -35,8 +32,7 @@ document. I’ve created three tables in a `{shiny}` app for a county-by-county 
     -	Calculated a test statistic utilizing the difference in means, found the p-value of the bootstrapped samples 
     -	**Concluded:** at the 5% significance level, there is sufficient evidence to support that the mean unemployment rate differs between Q1 and Q5 COVID-19 Mortality rates.
 
-One last note on my growth, I've started receiving complaints about the clanking coming out of my office, all from the sound of typing. My study hours haven't changed, but it is time to buy a quieter keyboard for coding sessions.
- I'll take that as a compliment, and a mark of gained proficiency.  
+Thank you Professor Dykes for teaching me all about R. 
 
 -Brooke
 
