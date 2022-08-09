@@ -15,7 +15,7 @@ The mid-semester table was created using functions from the `{tidyverse},` and s
 
 Compare this to the `{shiny}` app table, where the information was curated and calculated to provide insights beyond the original data sources.  To prevent outside influence on my final project, I avoided any in-depth reporting on COVID-19 statistics. However, if one of my calculations deviated wildly from the mean, I had the advantage of spot checking it against the public work of others. Validating my calculations was both a confidence boost and a morbid realization of the economic and health disparities in Michigan.
 
-I landed on dividing the information into quintiles by COVID-19 mortality rate, which I used to discover demographic trends between the groups. After finalizing my visualizations, I learned that the strong link between COVID-19 and less populous rural areas was [widely reported](https://www.cidrap.umn.edu/news-perspective/2021/09/rural-americans-more-likely-die-covid-19)on, aligning with my results.
+I landed on dividing the information into quintiles by COVID-19 mortality rate, which I used to discover demographic trends between the groups. After finalizing my visualizations, I learned that the strong link between COVID-19 and less populous rural areas was [widely reported](https://www.cidrap.umn.edu/news-perspective/2021/09/rural-americans-more-likely-die-covid-19) on, aligning with my results.
 
 
 
