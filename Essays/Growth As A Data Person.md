@@ -11,7 +11,7 @@ While my project is not quite up to the bar I set for myself, given that I was a
 ### Mid-Semester Work Vs Final Project:
 Earlier this semester, I created the tables and boxplots below using the `{starwars}` data set provided by the `{tidyverse}`. While there is beauty in the simplicity of the early visualizations, the coding skills needed to create the dynamic charts are layered with more complex code.
 
-The mid-semester table was created using functions from the `{tidyverse},` and summarizes features of the Star War’s characters. Additionally, I formatted elements of the “The 17 Feminine Characters of Star Wars” table with the `{gt}` to add pizazz beyond the default elements.  
+The mid-semester table was created using functions from the `{tidyverse},` and summarizes features of the Star War’s characters. Additionally, I formatted elements of the “The 17 Feminine Characters of Star Wars” table with `{gt}` to add pizazz beyond the default elements.  
 
 Compare this to the `{shiny}` app table, where the information was curated and calculated to provide insights beyond the original data sources.  To prevent outside influence on my final project, I avoided any in-depth reporting on COVID-19 statistics. However, if one of my calculations deviated wildly from the mean, I had the advantage of spot checking it against the public work of others. Validating my calculations was both a confidence boost and a morbid realization of the economic and health disparities in Michigan.
 
